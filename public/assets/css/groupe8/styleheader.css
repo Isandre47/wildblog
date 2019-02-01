@@ -1,0 +1,123 @@
+/* General */
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+
+header
+{
+  background-color: whitesmoke;
+  position: relative; /* on positionne le conteneur */
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 17px;
+  min-height: 100%;
+}
+
+/* header-anaelle */
+
+.anaelleHeader{
+  opacity: 0.5;
+  height:11vw;
+  margin-top: 3vw;
+  margin-bottom: -8vw;
+  transition: transform 1s;
+}
+
+.anaelleHeader:hover{
+  opacity: 1;
+  transform: scale(1.2) rotateY(190deg);
+}
+
+/* header-Elliot */
+
+.elliotHeader{
+  opacity: 0.5;
+  height: 11vw;
+  margin-right: 30vw;
+  margin-top: 2vw;
+  transition: transform 1s;
+}
+
+.elliotHeader:hover{
+  opacity: 1;
+  transform: scale(1.2) rotateY(190deg);
+}
+
+/* header-kevin */
+
+.kevinHeader{
+  opacity: 0.5;
+  height:11vw;
+  margin-top: 3vw;
+  margin-bottom: -8vw;
+  transition: transform 1s;
+}
+
+.kevinHeader:hover{
+  opacity: 1;
+  transform: scale(1.2) rotateY(190deg);
+}
+
+
+/* header-florent */
+
+.florentHeader{
+  opacity: 0.5;
+  height: 11vw;
+  transition: transform 1s;
+}
+
+.florentHeader:hover{
+  opacity: 1;
+  transform: scale(1.2) rotateY(190deg);
+}
+
+/* header-Ysatis */
+
+.ysatisHeader{
+  opacity: 0.5;
+  height: 11vw;
+  margin-right: 55vw;
+  transition: transform 1s;
+}
+
+.ysatisHeader:hover{
+  opacity: 1;
+  transform: scale(1.2) rotateY(190deg);
+}
+
+/* header-morgan */
+
+.morganHeader{
+  opacity: 0.5;
+  height: 11vw;
+  margin-top: 2vw;
+  transition: transform 1s;
+}
+
+.morganHeader:hover{
+  opacity: 1;
+  transform: scale(1.2) rotateY(190deg);
+}
+
+/* header-logo */
+
+.logoHeader{
+  opacity: 0.5;
+  height: 15vw;
+  margin-left: 3vw;
+  margin-top: -13vw;
+  /*position: absolute;
+  left:44vw;
+  top: -20vw;*/
+  transition: transform 1s;
+}
+
+.logoHeader:hover{
+  opacity: 1;
+  transform: scale(1.2) rotateY(190deg);
+}

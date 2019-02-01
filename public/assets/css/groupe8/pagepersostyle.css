@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@font-face {
+   font-family: 'Open Sans', sans-serif;
+}
+
+/* Container principaux de la page */
+*:focus {
+outline: none;
+}
+
+body {
+    background-color:#E5E5E5;
+}
+.container {
+    float:left;
+}
+.dark {
+    background-color:#545252;
+    color: white;
+}
+.light {
+    background-color:#E5E5E5;
+}
+
+/* Partie gauche - nom + pseudo + présentation */
+
+.personame {
+    margin-top: 65px;
+}
+.Pseudo {
+    color:#F4A443;
+}
+.pseudo {
+    margin-bottom: 15px;
+}
+
+.personame .name {
+    text-align: center;
+}
+
+.personame .Pseudo {
+    text-align: center;
+}
+
+.morganLogo{
+  font-family: 'Permanent Marker', cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+.and{
+  font-family: cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #F4A443;
+}
+.and1{
+  font-family: 'Permanent Marker' cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #F4A443;
+}
+
+/* Barre de réseaux sociaux */
+
+.socialnetwork {
+    background-color: #E5E5E5;
+    border:none;
+    margin-top: 8%;
+
+}
+
+.socialnetwork a {
+    color: black;
+    text-decoration: none;
+}
+.socialnetwork a:hover {
+    color: #F4A443;
+}
+
+.moreinfo {
+   background-color: #E5E5E5;
+    border: 1px solid orange;
+}
+
+.moreinfo a {
+    color: black;
+}
+.moreinfo a:hover {
+    color: #F4A443;
+}
+/* Cards présentations des projets */
+
+.card {
+    margin-top: 7%;
+    border-color: darkgrey;
+    color: black;
+}
+
+.back-title {
+    background-color: #F4A443;
+    line-height: normal;
+    text-align: center;
+}
+.card-body {
+    background-color: #E5E5E5;
+    font-size: 14px;
+    padding: 5px;
+}
+.card-img-top {
+    width:222px;
+    height:177px;
+    background-size: cover;
+}
+.card-text{
+  text-align: center;
+}
+.modal-text{
+  text-align: center;
+}
+
+
+/* Partie NAVBAR */
+
+.navImg {
+    width:70px;
+}
+/* passer      couleurwild:hover    en   couleurwild:visited (css)*/
+.couleurwild{
+   color:#ffffff;
+}
+.couleurwild:visited{
+   color: black;
+}
+
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: rgba(244,164,67,1.0);
+
+}
+
+/* SECTION PERSO A DROITE */
+.img-plainpied {
+    margin: 0 auto;
+    max-width: 300px;
+    border-radius: 25px;
+}
+
+.img-perso-ronde {
+    width: 220px;
+    margin-top: 8%;
+}
+.perso-section {
+    margin-top: 25px;
+    }
+.perso-section .logo-presentation {
+    width: 60px;
+}
+
+.descriptionPerso {
+    margin-left: 10%;
+    margin-right:10%;
+}
+
+
+
+.description-list, .media {
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width:768px) {
+    .description-list {
+    margin: auto;
+    }
+}
+
+/*konamiCodePageMorgan*/
+.stitch{
+  display: none !important;
+  transition: 0.5s;
+
+}
+.stitch3{
+display:  flex !important;
+margin: inherit;
+transition: 0.5s;
+}
+
+.dispa{
+  display: flex;
+transition: 0.5s;
+}
+.dispa1{
+  display: none !important;
+  transition: 0.5s;
+}

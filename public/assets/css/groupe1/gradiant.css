@@ -1,0 +1,33 @@
+
+
+@-webkit-keyframes gradiant {
+   0%{background-position:51% 0%}
+   50%{background-position:50% 100%}
+   100%{background-position:51% 0%}
+   /* 100%{background-position:50% 100%} */
+}
+@-moz-keyframes gradiant {
+   0%{background-position:51% 0%}
+   50%{background-position:50% 100%}
+   100%{background-position:51% 0%}
+   /* 100%{background-position:50% 100%} */
+}
+@-o-keyframes gradiant {
+   0%{background-position:51% 0%}
+   50%{background-position:50% 100%}
+   100%{background-position:51% 0%}
+   /* 100%{background-position:50% 100%} */
+}
+@keyframes gradiant {
+   0%{background-position:51% 0%}
+   50%{background-position:50% 100%}
+   100%{background-position:51% 0%}
+   /* 100%{background-position:50% 100%} */
+}
+
+.card-header{
+  animation: gradiant 20s linear infinite;
+  background: linear-gradient(318deg, white, grey, white);
+  /* background: linear-gradient(318deg, #b3d9d4, #d4b3c5, #ccaaa1, #d6d19f); */
+  background-size: 100% 20000%;
+}

@@ -1,0 +1,60 @@
+
+<nav class="navbar navbar-expand-lg shadow fixed-top navbar-light " style="background-color: #ffcc80;">
+    <a href="/"><img src="/assets/images/favicon.png" style="width:50px;"></a>
+    <a class="navbar-brand text-white" href="/">Wild Blog</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+
+
+
+        <div class="navbar-nav">
+
+            <li class="nav-item dropdown">
+
+                <a class="nav-item nav-item nav-link dropdown-toggle dropdown-toggle1 text-white navv1" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Catégories
+                </a>
+                <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                    {% for cat in category %}
+                        <h3><a class="menuCategories" href="/article/category/{{ cat.id }}">{{ cat.name }}</a></h3>
+                    {% endfor %}
+
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+
+                <a class="nav-item nav-item nav-link dropdown-toggle text-white navv1" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Portfolios
+                </a>
+                <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="/Portfolios/groupe1/">Groupe 1</a>
+                    <a class="dropdown-item" href="/Portfolios/groupe2/">Groupe 2</a>
+                    <a class="dropdown-item" href="/Portfolios/groupe3/">Groupe 3</a>
+                    <a class="dropdown-item" href="/Portfolios/groupe4/">Groupe 4</a>
+                    <a class="dropdown-item" href="/Portfolios/groupe5/">Groupe 5</a>
+                    <a class="dropdown-item" href="/Portfolios/groupe6/">Groupe 6</a>
+                    <a class="dropdown-item" href="/Portfolios/groupe7/">Groupe 7</a>
+                    <a class="dropdown-item" href="/Portfolios/groupe8/">Groupe 8</a>
+                    <a class="dropdown-item" href="/Portfolios/groupe9/">Groupe 9</a>
+
+                </div>
+            </li>
+
+
+
+            <a class="nav-item nav-link text-white navv1" href="/articles"><strong>Articles</strong></a>
+
+            {% if isLogged %}
+                <a class="nav-link nav-link text-white navv1" href="/logout"><strong>Déconnexion</strong></a>
+            {% else %}
+                <a class="nav-item nav-link text-white navv1" href="/login"><strong>Se connecter</strong></a>
+                <a class="nav-link nav-link text-white navv1" href='/register'><strong> Inscription </strong></a>
+            {% endif %}
+        </div>
+    </div>
+</nav>

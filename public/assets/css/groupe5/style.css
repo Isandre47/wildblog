@@ -1,0 +1,259 @@
+@font-face{
+  font-family: TitleFont;
+  src: url("/assets/fonts/groupe5/titleFont.ttf") format("truetype");
+}
+@include media-breakpoint-up(sm)
+{
+  .some-class {
+    display: none;
+  }
+}
+.navbar-brand {
+  padding-left: 20px;
+}
+.mainRow{
+  background-image: url("/assets/images/groupe5/bodyBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 720px;
+  overflow-x: hidden;
+}
+#mainTitle{
+  position: absolute;
+  font-family: TitleFont,arial,serif;
+  opacity: 0;
+}
+#mainTitle span{
+  font-size: 4em;
+  color: #3D3D3D;
+}
+img{
+ width: 75%;
+}
+p{
+  font-family: TextFont;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  padding-top: 0.3rem;
+  font-size: 1.4rem;
+  color: white;
+}
+#container{
+  display: none;
+}
+#row1{
+  margin-top: 1em;
+}
+#row1bis{
+  margin-bottom: -4em;
+}
+#row2bis{
+  margin-bottom: 1em;
+}
+#row3bis{
+  margin-bottom: -3em;
+}
+.rounded-circle{
+  width:10vw;
+  height:10vw;
+}
+.logo_wild{
+  width: 20px;
+  margin-left: 20px;
+}
+@media (max-width: 576px) {
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2% !important;
+  }
+}
+#droit-image{
+  position:absolute; 
+  top: 500px;
+}
+#droit_image a{
+  color: darkslategrey;
+  font-size: 10px;
+  font-family: arial,serif;
+}
+button {
+  border: none;
+  outline: none;
+}
+button:focus, button:active{
+  outline: none !important;
+  border: none !important;
+}
+button:hover {
+  cursor: url("/assets/images/groupe5/target.png"),auto;
+}
+#vignette-item1 {
+  background-size:cover;
+  opacity: 0;
+  transition: width 1s, height 1s;
+  box-shadow: 1px 1px 25px 15px #D1BE97;
+}
+#vignette-item1:hover {
+  background-size:cover;
+  width: 12vw;
+  height: 12vw;
+}
+#vignette-item2 {
+  background-size:cover;
+  opacity: 0;
+  transition: width 1s, height 1s;
+  box-shadow: 1px 1px 25px 15px #D1BE97;
+}
+#vignette-item2:hover {
+  background-size:cover;
+  width: 12vw;
+  height: 12vw;
+}
+#vignette-item3 {
+  background-size:cover;
+  opacity: 0;
+  transition: width 1s, height 1s;
+  box-shadow: 1px 1px 25px 15px #D1BE97;
+}
+#vignette-item3:hover {
+  background-size:cover;
+  width: 12vw;
+  height: 12vw;
+}
+#vignette-item4 {
+  background-size:cover;
+  opacity: 0;
+  transition: width 1s, height 1s;
+  box-shadow: 1px 1px 25px 15px #D1BE97;
+}
+#vignette-item4:hover {
+  background-size:cover;
+  width: 12vw;
+  height: 12vw;
+}
+#vignette-item5 {
+  background-size:cover;
+  opacity: 0;
+  transition: width 1s, height 1s;
+  box-shadow: 1px 1px 25px 15px #D1BE97;
+}
+#vignette-item5:hover {
+  background-size:cover;
+  width: 12vw;
+  height: 12vw;
+}
+#vignette-item6 {
+  background-size:cover;
+  opacity: 0;
+  transition: width 1s, height 1s;
+  box-shadow: 1px 1px 25px 15px #D1BE97;
+}
+#vignette-item6:hover {
+  background-size:cover;
+  width: 12vw;
+  height: 12vw;
+}
+.name{
+  font-size: 1.2rem;
+  width: 14vw;
+  font-family: TitleFont; 
+  color: #1B1927;
+  text-shadow: 1px 1px 0px #2D2726;
+  background-image: url("/assets/images/groupe5/pancarteBois.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+  box-shadow: 2px 2px 2px #2D2726;
+  }
+.Affiche{
+  height: 100%;
+}
+.divAffiche{
+  height: 90%;
+  margin-top: 5%;
+}
+.Modale
+{
+  background-image: url('/assets/images/groupe5/Fond.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+object{
+  width: 90%;
+  height: 80%;
+}
+.linkedInLogo{
+  width: 20%;
+}
+.gitHubLogo{
+  width: 16%;
+}
+.modal-body{
+  padding: 0;
+}
+.card-header{
+  padding: 0;
+  background-image: url("/assets/images/groupe5/backgroundMobile.jpg") !important;
+  background-size: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.card-header button{
+  margin-bottom: 5px;
+}
+.card-header img{
+  border-radius: 50%;
+  margin: 0;
+  padding:0;
+}
+.card-header span{
+  font-family: TitleFont;
+  letter-spacing: 0.05rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 5%;
+  color: black;
+}
+.wanted, .reward{
+  font-family: TitleFont !important;
+  font-size: 1.5 em;
+}
+.collapseMobile{
+  height: auto;
+  background-image: url('/assets/images/groupe5/accordionBackground.jpg');
+  margin: 0;
+}
+.card-body{
+  height: 650px;
+  background-color: transparent;
+}
+.card-body object{
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  background-color: transparent;
+}
+img{
+  width: 20%;
+}
+#gitHubLogo{
+  width: 16%;
+}
+.vignette{
+  width: 15%;
+  height: 15%;
+  position: absolute;
+}
+#cloud1, #cloud2{
+  position:relative;
+}
+#vignette2{
+  z-index: 100;
+}
+#vignette5{
+  z-index: 100;
+}

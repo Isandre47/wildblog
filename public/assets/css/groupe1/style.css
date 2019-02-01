@@ -1,0 +1,91 @@
+.categories{
+  display: none;
+}
+.navbar-brand {
+  padding-left: 20px;
+}
+
+.bodygroupe1{
+  margin-bottom: 70px;
+}
+
+navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 35rem;
+  padding-left: 35rem;
+}
+.shadow-lg{
+padding-top: 2vmin;
+}
+
+.topDescription{
+  margin-top: 8vmin;
+}
+
+.card shadow{
+  top: 400px;
+}
+
+.AProp{
+  margin-top: 100px;
+}
+
+.tronche{
+  float: left;
+  height: 120px;
+  margin-right: 3vmin;
+  border-radius: 1vmin;
+}
+
+p{
+  margin: 0 auto;
+}
+
+.sousCompet{
+  display: flex;
+}
+
+.shadow{
+  margin-bottom: 6vmin;
+  padding-bottom: 4vmin;
+}
+
+.description{
+  width: 100%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.corps{
+  margin: 0 auto;
+  width: 100%;
+}
+
+.progress{
+  margin-top: 3vmin;
+}
+
+.compet{
+  margin-top: 6vmin;
+  margin-left: 2vmin;
+  margin-right: 2vmin;
+}
+
+.visite .fas{
+  transform: rotate(-90deg);
+  padding:0 10px;
+  }
+  
+.visite .fas:hover{
+  border-color: #FBA858;;
+  }
+  
+.visite{
+  background-color:transparent;
+  margin-top:20px;
+  border:solid 1px;;
+  padding:5px 10px;
+  border-color:rgb(189, 188, 188);
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  }

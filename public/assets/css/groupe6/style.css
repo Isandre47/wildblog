@@ -1,0 +1,686 @@
+
+@font-face {
+	font-family: "starjedi";
+	src: url('../../fonts/groupe6/Starjedi.ttf');
+}
+
+@font-face {
+	font-family: "StarWarslogo";
+	src: url('../../fonts/groupe6/StarWarslogo.ttf')
+}
+
+@font-face {
+	font-family: "starjout";
+	src: url('../../fonts/groupe6/Starjout.ttf')
+}
+.navbar-brand {
+	padding-left: 20px;
+}
+.passerIntro{
+
+	padding-top: 70px;
+	padding-left: 0px;
+	padding-right: 0px;
+	float: left;
+	margin: auto;
+	text-align: center;
+	font-family: "starjedi", sans-serif;
+}
+
+.titreGroupe p{
+font-family: "starjout";
+color: #EBD71C;
+font-size: 3rem;
+}
+
+.invisible{
+	height: 100px;
+}
+
+.img-fluid{
+	max-width: 100%;
+	height: auto;
+}
+
+
+body{
+	background-color: #000;
+}	
+
+body, html{
+	height: 100%;
+	min-height: 100vh;
+	margin: 0px;
+  }
+
+#mainbg{
+
+
+	background-image: url('http://image.noelshack.com/fichiers/2018/38/3/1537361273-tatooine-star-wars-red2.png');
+	background-size: cover;
+}
+
+.test{
+	min-height: 100vh;
+}
+
+.bla {
+	margin-bottom: 100px;
+}
+
+/* DEBUT Partie animation vignettes */
+
+	.cardimg{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.cf {
+		position:relative;
+		height:200px;
+		width:200px;
+		margin:0 auto;
+		border: #EBD71C solid 3px;
+	}
+
+	.cf img {
+		position:absolute;
+		left:0;
+		-webkit-transition: opacity 1s ease-in-out;
+		-moz-transition: opacity 1s ease-in-out;
+		-o-transition: opacity 1s ease-in-out;
+		transition: opacity 1s ease-in-out;
+		padding: 7px;
+		}
+
+	.cf img.top:hover {
+		opacity:0;
+		cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),auto;
+		}
+		
+	.nomVign > p {
+		font-family: "starjedi";
+		color: #17a2b8;
+		font-size: 1em;
+		margin: 10px auto !important;
+		visibility: hidden !important;
+		opacity: 0;
+		-webkit-transition:  1s ease-in-out;
+		-moz-transition: opacity 1s ease-in-out;
+		-o-transition: opacity 1s ease-in-out;
+		transition: opacity 1s ease-in-out;
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 7px;
+		width: 65%;
+		padding-left: 4px;
+		padding-right: 4px;
+		padding-bottom: 1px;
+	}
+
+	.cf:hover + .nomVign > p{
+		visibility: visible !important;
+		opacity: 1;
+		cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),auto;
+	}
+
+	hr.style14 { 
+		
+		border: 0; 
+		height: 1px; 
+		margin-top: 0px;
+		background-image: -webkit-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8);
+		background-image: -moz-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8);
+		background-image: -ms-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8);
+		background-image: -o-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8); 
+		visibility: hidden !important;
+		opacity: 0;
+		-webkit-transition:  1s ease-in-out;
+		-moz-transition: opacity 1s ease-in-out;
+		-o-transition: opacity 1s ease-in-out;
+		transition: opacity 1s ease-in-out;
+	}
+
+	.cf:hover + .nomVign > hr.style14{
+		visibility: visible !important;
+		opacity: 1;
+		cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),auto;
+	}
+
+/* Pour les ecrans possédant un dispositif de survol */
+
+@media all and (any-hover: hover) {
+
+		.cardimg{
+
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		.cf {
+			position:relative;
+			height:200px;
+			width:200px;
+			margin:0 auto;
+			border: #EBD71C solid 3px;
+		}
+
+			
+		.cf img {
+			position:absolute;
+			left:0;
+			-webkit-transition: opacity 1s ease-in-out;
+			-moz-transition: opacity 1s ease-in-out;
+			-o-transition: opacity 1s ease-in-out;
+			transition: opacity 1s ease-in-out;
+			padding: 7px;
+			}
+			
+		.cf img.top:hover {
+			opacity:0;
+			cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),auto;
+			}
+			
+		.nomVign > p {
+			font-family: "starjedi";
+			color: #17a2b8;
+			font-size: 1em;
+			margin: 10px auto !important;
+			visibility: hidden !important;
+			opacity: 0;
+			-webkit-transition:  1s ease-in-out;
+			-moz-transition: opacity 1s ease-in-out;
+			-o-transition: opacity 1s ease-in-out;
+			transition: opacity 1s ease-in-out;
+			background-color: rgba(0, 0, 0, 0.5);
+			border-radius: 7px;
+			width: 65%;
+			padding-left: 4px;
+			padding-right: 4px;
+			padding-bottom: 1px;
+		}
+
+		.cf:hover + .nomVign > p{
+			visibility: visible !important;
+			opacity: 1;
+			cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),auto;
+		}
+
+		hr.style14 { 
+			
+			border: 0; 
+			height: 1px; 
+			margin-top: 0px;
+			background-image: -webkit-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8);
+			background-image: -moz-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8);
+			background-image: -ms-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8);
+			background-image: -o-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8); 
+			visibility: hidden !important;
+			opacity: 0;
+			-webkit-transition:  1s ease-in-out;
+			-moz-transition: opacity 1s ease-in-out;
+			-o-transition: opacity 1s ease-in-out;
+			transition: opacity 1s ease-in-out;
+		}
+
+		.cf:hover + .nomVign > hr.style14{
+			visibility: visible !important;
+			opacity: 1;
+			cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),auto;
+		}
+}
+
+/* Pour ceux qui n'ont pas de HOVER*/
+
+@media (hover: none){
+
+	.cardimg{
+
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.cf {
+		position:relative;
+		height:200px;
+		width:200px;
+		margin:0 auto;
+		border: #EBD71C solid 3px;
+	}
+
+		
+	.cf img {
+		position:absolute;
+		left:0;
+		-webkit-transition: opacity 1s ease-in-out;
+		-moz-transition: opacity 1s ease-in-out;
+		-o-transition: opacity 1s ease-in-out;
+		transition: opacity 1s ease-in-out;
+		padding: 7px;
+		}
+
+	.nomVign{
+
+		visibility: visible !important;
+	}
+
+	.nomVign > p {
+		font-family: "starjedi";
+		color: #17a2b8;
+		font-size: 1em;
+		margin: 10px auto !important;
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 7px;
+		width: 65%;
+		padding-left: 4px;
+		padding-right: 4px;
+		padding-bottom: 1px;
+		visibility: visible !important;
+		opacity: 1 !important;
+	}
+	hr.style14 { 
+		
+		border: 0; 
+		height: 1px; 
+		margin-top: 0px;
+		background-image: -webkit-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8);
+		background-image: -moz-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8);
+		background-image: -ms-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8);
+		background-image: -o-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8); 
+		visibility: hidden !important;
+		opacity: 0;
+		-webkit-transition:  1s ease-in-out;
+		-moz-transition: opacity 1s ease-in-out;
+		-o-transition: opacity 1s ease-in-out;
+		transition: opacity 1s ease-in-out;
+	}
+
+	img.top{
+		opacity: 0;
+	}
+
+}
+
+
+/* FIN Partie animation vignettes */
+
+
+/* DEBUT Partie STAR WARS  */
+
+	.star-wars-intro {
+		background: url("http://image.noelshack.com/fichiers/2018/38/3/1537369367-fond1.png") center center;
+		width: 100%;
+		height: 100%;
+		font-family: "Droid Sans", arial, verdana, sans-serif;
+		font-weight: 700;
+		color: #EBD71C;
+		background-color: #000;
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+	  }
+	  
+	  .star-wars-intro p.intro-text {
+		position: relative;
+		max-width: 16em;
+		font-size: 200%;
+		font-weight: 400;
+		margin: 20% auto;
+		color: #17a2b8;
+		opacity: 0;
+		z-index: 1;
+		text-align: center;
+		-webkit-animation: intro 3s ease-out;
+		-moz-animation: intro 3s ease-out;
+		-ms-animation: intro 3s ease-out;
+		-o-animation: intro 3s ease-out;
+		animation: intro 3s ease-out;
+	  }
+	  
+	  .star-wars-intro .main-content{
+		margin-left: auto;
+		margin-right: auto;
+		position: absolute;
+		z-index: 3;
+		width: 98%;
+		height: 50em;
+		bottom: 0;
+		font-size: 80px;
+		font-weight: bold;
+		text-align: justify;
+		overflow: hidden;
+		transform-origin: 50% 100%;
+		transform: perspective(550px) rotateX(25deg);
+	  }
+	  
+	  .star-wars-intro .main-content:after {
+		position: absolute;
+		content: ' ';
+		top: 0;
+		bottom: 60%;
+		background-image: linear-gradient(to top, rgba(0,0,0,1) 0%, transparent 100%);
+		pointer-events: none;
+	  }
+	  
+	  .star-wars-intro .space-button {
+		color: #17a2b8;
+		padding: 20px;
+		background: transparent;
+		text-decoration: none;
+		margin: 0 auto;
+		display: block;
+		text-align: center;
+		font-family: "starjedi", sans-serif;
+	  }
+	  
+	  .star-wars-intro .space-button:hover {
+		background-color: #17a2b8;
+		border-color: #17a2b8;
+		color: white;
+	  }
+	  
+	  .star-wars-intro .space-button:active,
+	  .star-wars-intro .space-button:focus {
+		background-color: #17a2b8;
+		border-color: #17a2b8;
+		color: white;
+	  }
+	  
+	  .star-wars-intro .title-content {
+		position: absolute;
+		top: 100%;
+		animation: scroll 90s linear 2s forwards;
+	  }
+	  
+	  .star-wars-intro .title-content > .content-header {
+		text-align: center;
+	  }
+	  
+	  
+	  .star-wars-intro .main-logo {
+		position: absolute;
+		width: 2.6em;
+		left: 50%;
+		top: 20vh;
+		font-size: 10em;
+		text-align: center;
+		margin-left: -1.3em;
+		line-height: 0.8em;
+		letter-spacing: -0.05em;
+		color: #000;
+		text-shadow: -2px -2px 0 #EBD71C, 2px -2px 0 #EBD71C, -2px 2px 0 #EBD71C, 2px 2px 0 #EBD71C;
+		opacity: 0;
+		z-index: 1;
+		-webkit-animation: logo 5s ease-out 2.5s;
+		-moz-animation: logo 5s ease-out 2.5s;
+		-ms-animation: logo 5s ease-out 2.5s;
+		-o-animation: logo 5s ease-out 2.5s;
+		animation: logo 5s ease-out 2.5s;
+	  }
+	  
+	  .star-wars-intro .main-logo > img {
+		max-width: 100%;
+	  }
+	  
+	  @-webkit-keyframes intro {
+		0% { opacity: 1; }
+		90% { opacity: 1; }
+		100% { opacity: 0; }
+	  }
+	  
+	  @-moz-keyframes intro {
+		0% { opacity: 1; }
+		90% { opacity: 1; }
+		100% { opacity: 0; }
+	  }
+	  
+	  @-ms-keyframes intro {
+		0% { opacity: 1; }
+		90% { opacity: 1; }
+		100% { opacity: 0; }
+	  }
+	  
+	  @-o-keyframes intro {
+		0% { opacity: 1; }
+		90% { opacity: 1; }
+		100% { opacity: 0; }
+	  }
+	  
+	  @keyframes intro {
+		0% { opacity: 1; }
+		90% { opacity: 1; }
+		100% { opacity: 0; }
+	  }
+	  
+	  
+	  @-webkit-keyframes logo {
+		0% { -webkit-transform: scale(1); opacity: 1; }
+		50% { opacity: 1; }
+		100% { -webkit-transform: scale(0.1); opacity: 0; }
+	  }
+	  
+	  @-moz-keyframes logo {
+		0% { -moz-transform: scale(1); opacity: 1; }
+		50% { opacity: 1; }
+		100% { -moz-transform: scale(0.1); opacity: 0; }
+	  }
+	  
+	  @-ms-keyframes logo {
+		0% { -ms-transform: scale(1); opacity: 1; }
+		50% { opacity: 1; }
+		100% { -ms-transform: scale(0.1); opacity: 0; }
+	  }
+	  
+	  @-o-keyframes logo {
+		0% { -o-transform: scale(1); opacity: 1; }
+		50% { opacity: 1; }
+		100% { -o-transform: scale(0.1); opacity: 0; }
+	  }
+	  
+	  @keyframes logo {
+		0% { transform: scale(1); opacity: 1; }
+		50% { opacity: 1; }
+		100% { transform: scale(0.1); opacity: 0; }
+	  }
+	  
+	  @keyframes scroll {
+		0% { top: 100%; }
+		100% { top: -170%; }
+	  }
+	  
+	  @media screen and (max-width: 720px) {
+		.star-wars-intro .main-content {
+		  font-size: 35px;
+		}
+		.star-wars-intro .title-content {
+		  position: absolute;
+		  top: 100%;
+		  animation: scroll 50s linear 2s forwards;
+		}
+	  }	/* FIN DE STARWARS */
+	
+
+	/* MODALES */	
+
+@media(min-width:992px){
+	.blabla{
+
+		width: 50%;
+		margin: auto;
+		text-align: center;
+	}
+}
+
+.modal-header
+{
+		border-bottom: 0px;
+		padding-bottom: 0px;
+}
+
+.blabla{
+
+	min-width: 30%;
+	max-width: 80%;
+	margin: auto;
+	text-align: center;
+}
+
+
+.h3 {
+	font-weight: bold;
+	font-size: 2.5em;
+	padding-bottom: 0px;
+	padding-top: 10px;
+	width: 100%;
+	font-family: "starjedi", sans-serif;
+	color: rgb(92, 86, 71);
+}
+
+.listPerso{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+.listPerso li{
+
+	list-style-type: none;
+	display: inline;
+}
+
+.modal-content{
+
+	margin-top: 20px;
+	background-color: #E0D3B1;
+	color: #8C836D;
+	border: 2px solid #8C836D;
+	border-radius: 5%;
+}
+hr{
+	align-items:center;
+	width:50%;
+	border-top: 2px double #8C836D;
+}
+
+
+.h4 
+{
+text-align: center;   
+font-size: 1em; 
+font-family: "starjedi", sans-serif;
+}
+
+.logoSW{
+	font-family: "StarWarslogo", sans-serif;
+	font-size: 3rem;
+	color: rgb(92, 86, 71);
+}
+
+.logoSWbutton{
+	font-family: "StarWarslogo", sans-serif;
+	font-size: 1.5rem;
+	color: rgb(92, 86, 71);
+}
+
+.logoSWtitle{
+	font-family: "StarWarslogo", sans-serif;
+	font-size: 3rem;
+	color: #EBD71C;
+}
+
+p{
+
+	font-size: 1em;
+}
+
+.logo
+{
+    text-align: center;
+}
+
+.linkedin
+{
+   font-size:48px;
+    color:rgba(0,119,181,1);
+}
+.github
+{
+    font-size:48px;
+    color:black;
+}
+.twitter
+{
+    color: rgba(85,172,238,1);
+    font-size: 48px;
+}
+
+.close {
+
+	background-color: #8C836D;
+	border: 1px solid #8C836D;
+}
+
+.btn-sm{
+
+	margin-bottom: 2px;
+}
+
+.modal-footer{
+	border: none;
+}
+
+.badge-pill{
+	font-size: 1rem;
+	padding-top: 6px;
+	margin-top: 5px;
+}
+
+.tagHtml{
+	background-color: rgb(225, 34, 0);
+	color: #fff;
+}
+.tagCss{
+	background-color: #009DE1;
+	color: #fff;
+}
+.tagJS{
+	background-color: rgb(225, 210, 0);
+	color: rgb(26, 25, 22);
+}
+.tagJava{
+	background-color: rgb(225, 0, 49);
+	color: rgb(47, 159, 207);
+}
+.tagReact{
+	background-color: rgb(26, 25, 22);
+	color: rgb(0, 210, 225);
+}
+.tagBootstrap{
+	background-color: rgb(123, 14, 133);
+	color: #fff;
+}
+.tagNode{
+	background-color: rgb(12, 145, 63);
+	color: rgb(26, 25, 22);
+}
+.tagPHP{
+	background-color: rgb(171, 66, 192);
+	color: #000;
+}
+.tagSQL{
+	background-color: rgb(83, 78, 65);
+	color: rgb(209, 162, 6);
+}
+
+	/* FIN MODALES */	/* FIN MODALES */	/* FIN MODALES */	/* FIN MODALES */	/* FIN MODALES */	/* FIN MODALES */	/* FIN MODALES */
+
+hr {
+	border: 0;
+	height: 1px;
+	background: #63C;
+	background-image: -webkit-linear-gradient(left, #C9F, #63C, #C9F);
+	background-image: -moz-linear-gradient(left, #C9F, #63C, #C9F);
+	background-image: -ms-linear-gradient(left, #C9F, #63C, #C9F);
+	background-image: -o-linear-gradient(left, #C9F, #63C, #C9F);
+	}
+
+
+

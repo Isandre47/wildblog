@@ -1,0 +1,56 @@
+{% extends "admin_layout.html.twig" %}
+
+{% block content %}
+
+    <div class="container-fluid">
+        <h1 class="text-white titlePageAdmin">Tous les articles</h1>
+
+        <table class="table table-striped text-white text-center">
+            <thead class="thead-light">
+            <tr>
+                <th scope="col">IMAGE</th>
+                <th scope="col">TITRE</th>
+                <th scope="col">CONTENU</th>
+                <th scope="col">AUTEUR</th>
+                <th scope="col">CATEGORIE</th>
+                <th scope="col">DATE</th>
+                <th scope="col">VOIR</th>
+                <th scope="col">MODIFIER</th>
+                <th scope="col">SUPPRIMER</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for article in articles %}
+
+            <tr>
+                <td><img src="/assets/images/{{ article.miniature }}" style="max-width: 100px; min-width: 100px;"></td>
+                <th scope="row">{{ article.title }}</th>
+                <td>{{ article.content|truncate(200) }}</td>
+                <td>{{ article.userFirstname }} {{ article.userLastname }}</td>
+                <td>{{ article.categoryName }}</td>
+                <td>{{ article.date }}</td>
+                <td>
+                    <a href="/article/{{ article.id }}" target="">
+                        <button type="submit" class="btn btn-warning"><i class="far fa-eye"></i></button></a>
+                </td>
+
+                <td>
+                    <a href="/admin/article/edit/{{ article.id }}" target="">
+                        <button type="submit" class="btn btn-warning"><i class="far fa-edit"></i></button></a>
+                </td>
+
+                <td>
+                    <a href="/admin/article/delete/{{ article.id }}" target="" data-confirm="Etes-vous certain de vouloir supprimer?">
+                        <button type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i></button></a>
+                </td>
+            </tr>
+
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+{% endblock content %}
+
+
+

@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg shadow fixed-top navbar-light" style="background-color: #50E3C2;">
+    <a href="/"><img src="/assets/images/favicon.png" style="width:50px;"></a>
+    <a class="navbar-brand text-white" href="/admin/dashboard">Wild Blog Admin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Commentaires
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item {{ active == "articles" ? "active" }}" href="/admin/comments">Tous les commentaires</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Utilisateurs
+
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item {{ active == "users" ? "active" }}" href="/admin/users">Tous les utilisateurs</a>
+                    <a class="dropdown-item {{ active == "users" ? "active" }}" href="/admin/user/createUser">Créer un utilisateur</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle text-white {{ active == "articles" ? "active" }}" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Articles
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item {{ active == "articles" ? "active" }}" href="/admin/articles">Tous les articles</a>
+                    <a class="dropdown-item {{ active == "add" ? "active" }}" href="/admin/createArticle">Créer un article</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="/admin/logout">Déconnexion</a>
+            </li>
+        </ul>
+    </div>
+</nav>

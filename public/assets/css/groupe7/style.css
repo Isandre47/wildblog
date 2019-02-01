@@ -1,0 +1,423 @@
+@font-face {
+  font-family: "Press Start 2P", cursive;
+  src: url(https://fonts.googleapis.com/css?family=Press+Start+2p);
+}
+
+@font-face {
+  font-family: "VT323", monospace;
+  src: url(https://fonts.googleapis.com/css?family=VT323);
+}
+.navbar-brand {
+  padding-left: 20px;
+}
+
+/* Corps de la page */
+body {
+  background-image: url(/assets/images/groupe7/fond.png);
+  background-size: 100%;
+  background-repeat: repeat;
+  padding:0px;
+}
+
+/* Titre page acceuil + profil */
+h2 {
+  font-family: "Press Start 2P";
+  font-size:3vw;
+  text-shadow: 3px 3px 0 black;
+  text-align: center;
+  color: white;
+  display:block;
+}
+
+/* Sous-itre page acceuil */
+h3 {
+  font-family: "Press Start 2P";
+  font-size: 1.4vw;
+  text-align: center;
+  color: white;
+  margin: 5%;
+  text-shadow: 2px 2px 0 #000;
+}
+
+/* Les liens en général du site */
+a { text-decoration: none;  border:none; }
+
+
+/* Style de la section */
+.accueil {
+  margin: 5% auto;
+  width:90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Le container */
+.row {
+  width:100%;
+  margin:0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:10px;
+}
+
+.blocCardPro {
+  width:80%;
+}
+
+/* le titre */
+.blocLogoTitle {
+  margin:5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+/* Le bloc qui entour l'image + le nom de chaque dev sur l'index */
+.blocprofil {
+  background-color: #000;
+  padding:5px;
+  margin:5px auto;
+  border-radius: 5px;
+  width:25vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+/* Les noms de chaque dev */
+nomprofil {
+  color: white;
+  display:block;
+  text-align: center;
+  font-family: "Press Start 2P";
+  font-size: 2vw;
+  text-shadow:-2px -2px 0 red;
+  margin:10px auto;
+}
+
+/* HOVER LISA */
+
+
+.Bg-imglisa {
+  background-image: url("/assets/images/groupe7/Lisa1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 99;
+  transition: 1s ease-in-out;
+  border-radius: 5px;
+  width: 22vw;
+  height: 22vw;
+}
+
+.card:hover .Bg-imglisa {
+  background-image: url("/assets/images/groupe7/Lisa.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* HOVER AYMERIC */
+
+.Bg-imgaymeric {
+  position: relative;
+  background-image: url("/assets/images/groupe7/Aymeric1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transition: 1s ease-in-out;
+  border-radius: 5px;
+  width: 22vw;
+  height: 22vw;
+}
+
+.card:hover .Bg-imgaymeric {
+  background-image: url("/assets/images/groupe7/Aymeric.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* HOVER CELINE */
+
+.Bg-imgceline {
+  position: relative;
+  background-image: url("/assets/images/groupe7/Celine1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transition: 1s ease-in-out;
+  border-radius: 5px;
+  width: 22vw;
+  height: 22vw;
+}
+
+.card:hover .Bg-imgceline {
+  position: relative;
+  background-image: url("/assets/images/groupe7/Celine.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* HOVER PAUL */
+
+.Bg-imgpaul {
+  position: relative;
+  background-image: url("/assets/images/groupe7/Paul1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transition: 1s ease-in-out;
+  border-radius: 5px;
+  width: 22vw;
+  height: 22vw;
+}
+
+.card:hover .Bg-imgpaul {
+  position: relative;
+  background-image: url("/assets/images/groupe7/Paul.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* HOVER KAPUCINE */
+
+.Bg-imgkapucine {
+  position: relative;
+  background-image: url("/assets/images/groupe7/Kapucine1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transition: 1s ease-in-out;
+  border-radius: 5px;
+  width: 22vw;
+  height: 22vw;
+}
+
+.card:hover .Bg-imgkapucine {
+  position: relative;
+  background-image: url("/assets/images/groupe7/Kapucine.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* HOVER IOANNIS */
+
+.Bg-imgioannis {
+  position: relative;
+  background-image: url("/assets/images/groupe7/Ioannis1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transition: 1s ease-in-out;
+  border-radius: 5px;
+  width: 22vw;
+  height: 22vw;
+}
+
+.card:hover .Bg-imgioannis {
+  position: relative;
+  background-image: url("/assets/images/groupe7/Ioannis.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* PAGES PROFILES */
+/* First title : 'Work attractive & creative' & 'Who's this human?'  */
+.profilPageTitle {
+  margin: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  color: #fff;
+  text-shadow: 4px 4px 0 #000;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+/*------------ GENERAL : section + global card ----------------*/
+/*Section*/
+.ProfilSection {
+  margin-bottom: 15px;
+}
+
+/* Sections title */
+.sectionNames {
+  max-width: 40%;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 15px auto;
+  background-color: #000;
+  color: white;
+  border-radius: 3px;
+  font-family: "Press Start 2P", cursive;
+  padding: 5px;
+}
+
+.blackLink {
+  color: black;
+}
+
+/* Card Blocs as : profil, Contact, Level, Hobbies... */
+.maCarte {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  min-height: 250px;
+  box-shadow: 4px 4px 0 #000;
+  border-radius: 5px;
+  background-color: #eeeeee;
+  border: 1px solid #000;
+  color: #000;
+}
+
+/*------------ BLOC PROFILE ----------------*/
+
+/* Card title */
+.myTitleCard {
+  border-radius: 5px;
+  padding: 10px;
+  color: #000;
+  font-size: 1em;
+  width: 100%;
+  font-family: "Cousine", monospace;
+  border-bottom: 1px solid #d9d8d8;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Bloc Image Profil */
+.profilePic {
+  width: 150px;
+  height: 150px;
+  margin: 0px 10px -2px;
+  border: 10px solid #e1e1e1;
+  object-fit: cover;
+}
+
+/* Job/fonction name */
+myName {
+  font-size: 1.3em;
+  font-weight: bold;
+  display: block;
+  padding: 5px;
+  font-family: "Cousine", monospace;
+}
+
+/* Text card */
+.textCard {
+  height: 250px;
+  overflow: auto;
+  font-size: 1em;
+  text-align: justify;
+}
+
+/*------------ BLOC progressbar ----------------*/
+
+/*Level*/
+.progBar {
+}
+
+/* flags languages */
+.flagContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Button more infos */
+.modalBtn {
+  display: block;
+  margin: 10px auto;
+}
+
+/*----------------- Card Hobbies -------------*/
+.hobbiesCardHeader {
+  display: flex;
+  justify-content: space-around;
+}
+
+.blockquote-footer {
+  text-align: right;
+}
+
+/*Contact*/
+.submitBtn {
+  display: block;
+  margin: auto;
+}
+
+/*Social Network Icons*/
+.socialNetworkCard {
+  margin: 5px 10px;
+}
+
+.socialNetworkCardBody {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*------------- Return arrow ---------------*/
+.fa-arrow-circle-left {
+  margin: 5px 10px;
+}
+
+.fa-arrow-circle-left:hover {
+  color: white;
+}
+
+.desktopVersion {
+  display: none;
+}
+
+/*------------ RESPONSIVE ---------------- */
+@media (min-width: 992px) {
+  body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  h1 {
+    width: 100%;
+  }
+
+  section {
+    width: 48%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .fa-arrow-circle-left {
+    margin: 5px 10px;
+  }
+
+  .desktopVersion {
+    display: block;
+  }
+
+  .desktopVersion:hover {
+    color: white;
+  }
+
+  .mobileVersion {
+    display: none;
+  }
+}

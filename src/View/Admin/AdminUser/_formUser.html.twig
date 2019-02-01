@@ -1,0 +1,43 @@
+
+
+<div class="container">
+    <div class="card article">
+        <div class="card-body commentFond">
+            <form method="post">
+                <div class="form-group">
+                    <label for="firstname">Nom</label>
+                    <input type="text" class="form-control" id="text" name="firstname" value="{{ nameErr.firstname }}">
+                    {{ errors.firstname }}
+                </div>
+
+                <div class="form-group">
+                    <label for="lastname">Prénom</label>
+                    <input type="text" class="form-control" id="text" name="lastname" value="{{ nameErr.lastname }}">
+                    {{ errors.lastname }}
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="text" name="email" value="{{ nameErr.email }}">
+                    {{ errors.email }}
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="text" class="form-control" id="text" name="password" value="">
+                    {{ errors.password }}
+                </div>
+
+                <div class="form-group">
+                    <label for="status">Status</label>
+                    <select class="form-control" id="status" name="status">
+                        <option value="admin">Admin</option>
+                        <option value="user">Visiteur</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-warning">Envoyer</button>
+            </form>
+        </div>
+    </div>
+</div>

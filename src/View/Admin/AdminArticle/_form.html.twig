@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="card article commentFond">
+        <div class="card-body">
+
+
+            <form method="post" action="" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="titre">Titre</label>
+                    <input type="text" class="form-control" id="text" name="title" value="{{ content.title }}" style="background-color: white;">
+                    <span>{{ errors.title }}</span>
+
+                    <br/>
+                    <label for="titre">Catégorie</label>
+                    <select name="category" id="categorie">
+                        <option value="1">Wild Code School</option>
+                        <option value="2">Formations</option>
+                        <option value="3">Interventions</option>
+                        <option value="4">Veilles</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="contenu">Contenu</label>
+                    <textarea class="form-control" id="contenu" name="content" rows="6" >{{ content.content }}</textarea>
+                    <span>{{ errors.content }}</span>
+                </div>
+                <div>
+                    <label for='image'><strong>Cliquez pour ajouter une image : </strong></label>
+                    <br/>
+                    <input id='image' name="image" type="file">
+                    <span>{{ errors.image }}</span>
+                </div>
+                <br/>
+                <br/>
+                <div>
+                    <label for='imageMin'><strong>Cliquez pour ajouter une miniature : </strong></label>
+                    <br/>
+                    <input id='imageMin' name="imageMin" type="file">
+                    <span>{{ errors.imageMin }}</span>
+                </div>
+                <br/>
+                <br/>
+                <button type="submit" name="envoyer" class="btn btn-warning">Envoyer</button></a>
+
+            </form>
+
+        </div>
+    </div>
+</div>

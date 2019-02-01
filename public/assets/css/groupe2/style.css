@@ -1,0 +1,517 @@
+.categories{
+    display: none;
+}
+.navbar-brand {
+    padding-left: 20px;
+}
+
+:root {
+  --main-bg-color: #00B3D7;
+}
+
+#petitEcran {
+  display:none;
+}
+
+a.panels2 {
+    z-index:auto;
+}
+
+a.panels2 span {
+    display: none;
+}
+
+a.panels2:hover span {
+    display:block;
+    position:absolute;
+    top:4vw;
+    right:2vw;
+    z-index:3;
+    cursor: pointer;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+@font-face {
+  font-family: 'Ruslan Display', cursive;
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Ruslan Display";
+  font-size: 7vw;
+  color: white;
+  padding:2vw;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+h3 {
+  font-family: "Ruslan Display";
+  font-size: 2.5vw;
+  color: white;
+}
+
+hr {
+  width: 75%;
+}
+
+.panneauxDroite img {
+    max-width:150px;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.panneauxGauche img {
+    max-width:150px;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.panneauxGauche img:hover {
+  opacity:0.9;
+  transform: translateY(2px);
+}
+
+.panneauxDroite img:hover {
+  opacity:0.9;
+  transform: translateY(2px);
+}
+
+.panels2 {
+  display:block;
+  position: relative;
+  margin: 3vw auto;
+}
+
+.panels{
+    width: 250px;
+}
+
+.panneauFaycal {
+  transform: rotate(10deg);
+}
+
+.panneauJn {
+  transform: rotate(-10deg);
+}
+
+.panneauCamilo {
+  transform: rotate(-10deg);
+}
+
+.panneauShems {
+  transform: rotate(10deg);
+}
+
+#earthblock {
+    background-image: url('/assets/images/groupe2/travelbackground2.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+}
+
+#earth {
+    left:50%;
+    transform: translate(-50%,-100%);
+    max-width: 300px;
+    height:300px;
+    background: url('/assets/images/groupe2/earthmap.jpg');
+    border-radius: 50%;
+    background-size: 630px;
+    animation: rotate 20s linear infinite;
+    transition: transform 200ms linear;
+    transform-style: preserve-3d;
+    box-shadow: inset 20px 0px 80px rgba(0, 0, 0, 1);
+    color: #000;
+    display: inline-block;
+}
+
+#earth:after {
+      content: "";
+      position: relative;
+      top: 0%;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      box-shadow: -10px 5px 100px 0px rgba(0,0,0,.9) inset;
+}
+
+#earth:before {
+      content: "";
+      position: relative;
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0.2;
+      background: radial-gradient(circle at 100px 100px, #fff, #000);
+}
+
+@keyframes rotate {
+  0% {background-position: 0 0;}
+  100% {background-position: 630px 0;}
+}
+
+.plane {
+
+    position:absolute;
+    bottom: 40px;
+    right: 20px;
+    transform: rotate(-30deg);
+    transform: scale(-1,1);
+}
+
+
+/* Remerciements */
+.list-group-item
+{
+	border: none;
+  background-color: var(--main-bg-color);
+}
+
+
+.app-footer
+{
+  background-color: var(--main-bg-color);
+}
+
+.remerciements {
+  overflow: hidden;
+}
+
+/* CAROUSEL */
+.carousel-inner {
+  margin: 3vw auto;
+  background-color: var(--main-bg-color);
+}
+.portrait{
+  height: 30%;
+  width: 50%;
+}
+
+.item-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+  /* Modal passeport (Lauriane & Alex)*/
+.content {
+top: 0;
+width: 100%;
+height: 100%;
+}
+
+.pageHaut{
+height: 50%;
+overflow: auto;
+}
+
+.pageBas{
+height: 50%;
+overflow: auto;
+
+}
+.passeport p {
+word-wrap: break-word;
+font-size: 1rem;
+margin: 0;
+}
+
+.passeport p {
+  font-family: Roboto;
+  font-size: 2rem;
+  color: darkslategrey;
+}
+
+.passeport hr {
+  width: 75%;
+  margin:0.25vw;
+  padding:0;
+}
+
+.permisDeCoder {
+  font-size: 2rem;
+  text-align: left;
+  font-weight: bold;
+  padding: 0.5vw 0 0.5vw 1.5vw;
+}
+
+.photo img {
+	filter: drop-shadow(5px 5px 5px #222);
+}
+
+.poste {
+  font-size: 1.75rem;
+  text-align: left;
+  font-weight: bold;
+  padding: 1vw 0 1vw 0;
+}
+
+.quote p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.quote span {
+  float:right;
+  font-size:1.5rem;
+  font-weight: bold;
+  color: #37474F;
+}
+
+i {
+  color: #37474F;
+  font-size: 3.5rem;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+a:hover i {
+  opacity:0.7;
+}
+
+/* MODALE SHEMS & FAYCAL  */
+
+.modal-content{
+    background: transparent;
+    border: none;
+}
+
+.modal-body {
+    max-width: 100%;
+    display: grid;
+    height: 100%;
+}
+
+.modal-body img {
+    max-width: 100%;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+@media screen and (max-width: 320px) {
+  body {
+    width: 320px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+
+  h1 {
+    text-align: center;
+    font-family: "Ruslan Display";
+    font-size: 10vw;
+    color: white;
+    text-shadow: 0 1px 0 #ccc,
+                 0 2px 0 #c9c9c9,
+                 0 3px 0 #bbb,
+                 0 4px 0 #b9b9b9,
+                 0 5px 0 #aaa,
+                 0 6px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1),
+                 0 1px 3px rgba(0,0,0,.3),
+                 0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.25),
+                 0 10px 10px rgba(0,0,0,.2),
+                 0 20px 20px rgba(0,0,0,.15);
+  }
+
+  .panels{
+      width: 350px;
+  }
+
+  #earthblock {
+      padding: 3vw;
+  }
+
+  #earth {
+      left:50%;
+      transform: translate(-50%,0%);
+      max-width: 300px;
+      height:300px;
+      background: url('/assets/images/groupe2/earthmap.jpg');
+      border-radius: 50%;
+      background-size: 630px;
+      animation: rotate 20s linear infinite;
+      transition: transform 200ms linear;
+      transform-style: preserve-3d;
+      box-shadow: inset 20px 0px 80px rgba(0, 0, 0, 1);
+      color: #000;
+      display: inline-block;
+      margin: 0vw auto;
+      position: relative;
+  }
+
+  .panels2 {
+    position: relative;
+    margin: 0.5vw auto;
+  }
+
+  #grandEcran {
+    display: none;
+  }
+
+  #petitEcran {
+    display:block;
+  }
+
+  .panneauFaycal {
+    transform: rotate(0deg);
+  }
+
+  .panneauJn {
+    transform: rotate(0deg);
+  }
+
+  .panneauCamilo {
+    transform: rotate(0deg);
+  }
+
+  .panneauShems {
+    transform: rotate(0deg);
+  }
+
+  .passeport p {
+    font-size: 1.5rem;
+  }
+
+  .quote span {
+    font-size:1.25rem;
+  }
+
+  .permisDeCoder {
+    font-size: 1.05rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  #grandEcran {
+    display: none;
+  }
+
+  #petitEcran.modal-body img {
+    max-width: 100%;
+} {
+    display:block;
+  }
+
+  h1 {
+    text-align: center;
+    font-family: "Ruslan Display";
+    font-size: 18vw;
+    color: white;
+    text-shadow: 0 1px 0 #ccc,
+                 0 2px 0 #c9c9c9,
+                 0 3px 0 #bbb,
+                 0 4px 0 #b9b9b9,
+                 0 5px 0 #aaa,
+                 0 6px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1),
+                 0 1px 3px rgba(0,0,0,.3),
+                 0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.25),
+                 0 10px 10px rgba(0,0,0,.2),
+                 0 20px 20px rgba(0,0,0,.15);
+  }
+
+    h3 {
+      font-family: "Ruslan Display";
+      font-size: 5vw;
+      color: white;
+    }
+
+  #earth {
+      left:50%;
+      transform: translate(-50%,0%);
+      max-width: 300px;
+      height:300px;
+      background: url('/assets/images/groupe2/earthmap.jpg');
+      border-radius: 50%;
+      background-size: 630px;
+      animation: rotate 20s linear infinite;
+      transition: transform 200ms linear;
+      transform-style: preserve-3d;
+      box-shadow: inset 20px 0px 80px rgba(0, 0, 0, 1);
+      color: #000;
+      display: inline-block;
+      margin: 0vw auto;
+      position: relative;
+  }
+
+  .panels2 {
+    position: relative;
+    margin: 1vw auto;
+  }
+
+  .permisDeCoder {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #earth {
+      left:50%;
+      transform: translate(-50%,-130%);
+      max-width: 300px;
+      height:300px;
+      background: url('/assets/images/groupe2/earthmap.jpg');
+      border-radius: 50%;
+      background-size: 630px;
+      animation: rotate 20s linear infinite;
+      transition: transform 200ms linear;
+      transform-style: preserve-3d;
+      box-shadow: inset 20px 0px 80px rgba(0, 0, 0, 1);
+      color: #000;
+      display: inline-block;
+      margin: 0vw auto;
+      position: relative;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .quote p {
+    font-size: 1.1rem;
+  }
+
+  .quote span {
+    font-size: 1rem;
+  }
+
+  i {
+    font-size: 2rem;
+  }
+
+  .permisDeCoder p {
+    font-size: 1rem;
+  }
+  .poste p {
+    font-size: 1rem;
+  }
+   .nom p, .prenom p, .ville p, .hobbys p {
+     font-size: 1rem;
+   }
+}

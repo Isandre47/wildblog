@@ -1,0 +1,8 @@
+/vendor/
+/temp/*
+*.cache
+app/db.php
+/.idea
+.DS_Store
+src/.DS_Store
+*~

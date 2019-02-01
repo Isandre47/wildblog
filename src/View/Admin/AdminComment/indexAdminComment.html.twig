@@ -1,0 +1,50 @@
+{% extends "admin_layout.html.twig" %}
+
+{% block content %}
+
+    <div class="container">
+        <h1 class="text-white titlePageAdmin">Tous les commentaires</h1>
+
+        <table class="table table-striped text-white text-center">
+            <thead class="thead-light">
+            <tr>
+                <th scope="col">TITRE DE L'ARTICLE</th>
+                <th scope="col">COMMENTAIRE</th>
+                <th scope="col">DATE</th>
+                <th scope="col">UTILISATEUR</th>
+                <th scope="col">SUPPRIMER</th>
+
+
+            </tr>
+            </thead>
+            <tbody>
+            {% for content in comments %}
+
+                <tr>
+                    <td>{{ content.title }} </td>
+                    <td data-toggle="tooltip" data-placement="top" title="{{ content.content }}">
+                        {{ content.content|truncate(80) }}
+                    </td>
+
+                    <td>
+                        {{ content.date}}
+                    </td>                    <td>
+                        {{ content.lastname}}
+                    </td>
+                    <td>
+                        <a href="/admin/comment/delete/{{ content.id }}" target="" data-confirm="Etes-vous certain de vouloir supprimer?">
+
+                            <button type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i></button></a>
+
+                    </td>
+
+                </tr>
+
+
+
+            {% endfor %}
+
+        </table>
+    </div>
+
+{% endblock content %}

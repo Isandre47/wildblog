@@ -1,0 +1,23 @@
+.up{
+  position: fixed;
+  z-index: 3;
+  bottom: 65px;
+  right: 30px;
+  background-color: rgba(100, 100, 100, 0.2);
+  border-radius: 100%;
+}
+
+.up a{
+  display: block;
+  width: 64px;
+  height: 64px;
+  background-image: url("https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_arrow_drop_up_48px-512.png");
+  background-position: center;
+  background-size: contain;
+  border-radius: 100%;
+  z-index: 4;
+}
+
+.up a:hover{
+  box-shadow: 1px 1px 3px orange, -1px -1px 3px orange, -1px 1px 3px orange, 1px -1px 3px orange;
+}

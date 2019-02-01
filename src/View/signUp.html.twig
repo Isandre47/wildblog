@@ -1,0 +1,37 @@
+{% extends 'layout.html.twig' %}
+{% block register %}
+    <div class="main-w3layouts wrapper">
+
+
+        <h1 class="titre">Inscription WildBlog</h1>
+        <div class="main-agileinfo inputStyle">
+
+            <div class="agileits-top">
+                <form action="#" method="post">
+
+
+                    <input class="text" type="text" id="Username" name="lastname" placeholder="Nom" required="" value="{{ post.lastname ? post.lastname }}">
+                    <span>{{ errorRegister.lastname }}</span>
+
+                    <input class="text" type="text" id="Username" name="firstname" placeholder="Prénom" required="" value="{{ post.firstname ? post.firstname }}">
+                    <span>{{ errorRegister.firstname }}</span>
+
+                    <input class="text email" type="email" id="email" name="email" placeholder="Email" required="" value=" {{ post.email }}">
+                    <span>{{ errorRegister.email }}</span>
+
+                    <input class="text" type="password" id="password" name="password" placeholder="Mot de passe" required="">
+                    <span>{{ errorRegister.password }}</span>
+
+                    <input class="text w3lpass" type="password" id="password" name="password_control" placeholder="Confirmer mot de passe" required="">
+                    <div class="etc-login-form">
+                        <p>Vous avez déjà un compte ? <a href="login" style="color:#ffcc80"> <strong> Connectez-vous ici</strong></a></p>
+                    </div>
+
+                    <input type="submit" name="inscription" style="color:#FFFFFF" value="ENVOYER">
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

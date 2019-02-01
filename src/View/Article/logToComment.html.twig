@@ -1,0 +1,16 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+    <div class="container">
+    <div class="card text-center cardFond mt-5">
+        <div class="card-body">
+            <h5 class="card-title">Attention</h5>
+            <p class="card-text">{{ errorConnexion }}</p>
+            <a href="/login" class="btn mt-3">Connectez-vous</a>
+
+            <a href="{{ return }}" class="btn mt-3">Retour à l'article</a>
+        </div>
+    </div>
+    </div>
+{% endblock %}
+

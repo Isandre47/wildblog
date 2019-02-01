@@ -1,0 +1,9 @@
+# This will prevent generating "Not Found" error in browser
+# Then we will manually do the rest to produce page for user
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS_HOST} ^isandre.net/$ [NC,OR]
+    RewriteCond %{REQUEST_URI} !public/
+    RewriteRule (.*) /public/$1 [L]
+</IfModule>

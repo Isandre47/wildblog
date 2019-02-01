@@ -1,0 +1,73 @@
+@font-face{
+    font-family: BouWeste;
+    src: url("/assets/fonts/groupe5/BouWeste.ttf") format("truetype");
+  }
+html{
+    overflow: hidden;
+}
+body{
+    background-color: transparent;
+    color:white;
+    font-family: 'BouWeste', serif;
+    font-size: 1em;
+    font-weight: bold;
+}
+img{
+    width: 20%;
+    margin-right: 5%;
+}
+.carousel-competences {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.competences{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+.competences p{
+    margin: 5px 15px;
+}
+.competences img{
+    width: 80%
+}
+.accordionContainer{
+    padding: 0;
+}
+.bullet{
+    display: flex;
+    flex-direction: row;
+}
+.bullet img{
+    width: 25%;
+    height: 15%;
+    transform: rotate(45deg);
+    margin-left:-10%;
+}
+#firstBullet{
+    margin-left:+10%;
+}
+
+.carousel-competences {
+  text-align: center;
+}
+
+.carousel-control-next {
+  right: -13px;
+}
+
+.carousel-control-prev {
+  left: -13px;
+}
+
+.title-carousel {
+  text-align: center;
+}
+
+.text-carousel {
+  text-align: justify;
+  padding: 5px 5px;
+}

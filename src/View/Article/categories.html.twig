@@ -1,0 +1,12 @@
+
+<div class="col-9">
+
+    <ul class="categories">
+        <h3><a class="menuCategories" href="/articles"><strong>Tous les articles</strong></a></h3>
+        {% for cat in category %}
+               <h3><a class="menuCategories" href="/article/category/{{ cat.id }}">{{ cat.name }}</a></h3>
+        {% endfor %}
+    </ul>
+
+</div>
+

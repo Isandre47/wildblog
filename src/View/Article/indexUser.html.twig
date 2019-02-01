@@ -1,0 +1,63 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+
+    <div class="container-fluid">
+        <div class="row articles">
+            <div class="col-md-3">
+            </div>
+            <h1 class="titleActualite col-md-9 text-left">Actualités</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-4 col-lg-2 d-none d-xl-block">
+
+                {% include "Article/categories.html.twig" %}
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-10">
+                <div class="indexArticles">
+
+                        {% for article in articles %}
+                            {% if loop.index is not divisible by(2) %}
+
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6 d-flex">
+                                        <div class="mise">
+                                            <a class="link" href ="/article/{{ article.id }}">
+                                                <h2 class="featurette-heading articleTitre">{{ article.title }}<span class="text-muted"></span></h2>
+                                                <p class="lead">Rédigé le {{ article.date }} par {{ article.userFirstname }} {{ article.userLastname }}</p>
+                                                <p class="lead">{{ article.content|truncate(200)|raw }}</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6">
+                                        <img class="featurette-image img-fluid mx-auto" src="/assets/images/{{ article.miniature }}" alt="Generic placeholder image">
+                                    </div>
+                                </div>
+
+                            {% else %}
+                                <hr class="featurette-divider">
+
+                                <div class="row">
+                                    <div class="col-md-6 order-md-2">
+                                        <a class ="link" href ="/article/{{ article.id }}">
+                                            <h2 class="featurette-heading articleTitre">{{ article.title }}<span class="text-muted"></span></h2>
+                                            <p class="lead">Rédigé le {{ article.date }} par {{ article.userFirstname }} {{ article.userLastname }}</p>
+                                            <p class="lead">{{ article.content|truncate(200)|raw }}</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 order-md-1">
+                                        <img class="featurette-image img-fluid mx-auto" src="/assets/images/{{ article.miniature }}" alt="Generic placeholder image">
+                                    </div>
+                                </div>
+                                <hr class="featurette-divider">
+                            {% endif %}
+                        {% endfor %}
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock content %}
+

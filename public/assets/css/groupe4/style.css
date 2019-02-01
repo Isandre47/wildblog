@@ -1,0 +1,263 @@
+/*-----------------------------------------------------------------------------*/
+/*------------------------BASIC SETUP -----------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+html, body {
+    width: 100%;
+}
+
+
+/* Modif Emeric pour du smooth scroll */
+html {
+    scroll-behavior: smooth; /*unsupported in IE and Safari*/
+}
+
+
+.navbar-brand {
+    padding-left: 20px;
+}
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------*/
+/*------------------------WELCOME PAGE-----------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+.first_img {
+    border: 6px solid rgba(244, 164, 67, 0.4);
+    border-radius: 50%;
+}
+
+.first_img:hover {
+    border: 6px solid rgba(244, 164, 67, 0.8);
+    border-radius: 50%;
+}
+
+.first_imgbis {
+  border: 6px solid rgba(244, 164, 67, 0.8);
+  border-radius: 50%;
+}
+
+*:focus{
+    outline:none;
+  }
+/*-----------------------------------------------------------------------------*/
+/*------------------------HOME------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@font-face {
+    font-family: Colus;
+    src: url('/assets/fonts/groupe4/Colus-Regular.otf')
+}
+#homepage {
+    height: 55vw;
+    background-image: url('/assets/images/groupe4/WCS1.jpg');
+    background-attachment: fixed;
+    background-position: 50% 10%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: calc(100%);
+}
+
+.doublev {
+    color: #ea701e;
+    border: 2px
+}
+
+.titre2 {
+    font-family: "Colus";
+    font-size: 3em;
+    letter-spacing: 4px;
+    padding-left: 0.5em;
+    text-align: center;
+    color: #fff5ea;
+    animation: titleload 2s ease;
+    animation: titlezoom 2s ease;
+}
+
+@keyframes titlezoom {
+    0% {transform: scale(0.2);}
+    25% {transform: scale(0.5);}
+    50% {transform: scale(0.7);}
+    75% {transform: scale(0.9);}
+    100% {transform: scale(1);}
+}
+
+.titre1 {
+    margin-top: 9%;
+    font-family: "Anton";
+    font-size: 8em;
+    line-height: 0.9;
+    text-align: center;
+    color: floralwhite;
+    animation: titleload 1.5s ease;
+}
+
+@keyframes titleload {
+    0% {opacity: 0;}
+    25% {opacity: 0.2;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.8;}
+    100% {opacity: 1;}
+}
+
+@media (max-width: 992px) {
+    .titre2 {
+        font-size: 1.5em;
+    }
+    .titre1 {
+        font-size: 3em;
+    }
+}
+
+.btn-link {
+    position: absolute;
+    color: white;
+    left:48%;
+    top: 80%;
+    animation: btnload 2s ease;
+}
+
+.btn-link:hover {
+    color: white;
+}
+
+@keyframes btnload {
+    0% {top: 150%;}
+    25% {top: 130%;}
+    50% {top: 110%;}
+    75% {top: 98%;}
+    100% {top: 80%;}
+}
+
+@media (max-width: 1524px) {
+    .btn-link {
+        top: 60%;
+    }
+}
+
+@media (max-width: 1160px) {
+    .btn-link {
+        z-index: -1;
+    }
+}
+
+/*---------- HOVER EFFECT ON PICTURES-----------------------*/
+
+
+#homePortfolio {
+    height: 100vh;
+    background-image: url('/assets/images/groupe4/Background.png');
+    background-size: cover;
+}
+
+#img-switch {
+    background-size: cover;
+    background-image: url('/assets/images/groupe4/canap.jpg')
+}
+
+.hidden-div-phil {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url('/assets/images/groupe4/PhilippELSASSER.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.hidden-div-emer {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url('/assets/images/groupe4/EmericGHERARDI.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.hidden-div-dave {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url('/assets/images/groupe4/DavidGABRIELE.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.hidden-div-alex {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url('/assets/images/groupe4/AlexandreGUERIN.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.hidden-div-jeff {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url('/assets/images/groupe4/JeffreyGERBE.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.hidden-div-kev {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url();
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------*/
+/*------------------------MODAL------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+
+.modal-name{
+  color: #F4A443;
+}
+
+.modal-lg {
+    max-width: 95%;
+    margin-top: 6vh;
+}
+
+i { font-size: 2.5rem;}
+
+.modal-body {
+    background-image: url('/assets/images/groupe4/Background.png');
+}
+ .fab{
+   color: #F4A443;
+ }
+
+ .bio{
+     text-align: center;
+ }
+
+
+/*-----------------------------------------------------------------------------*/
+/*------------------------GLOBAL FONT------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+#body{
+    font-family:  "Arial";
+}

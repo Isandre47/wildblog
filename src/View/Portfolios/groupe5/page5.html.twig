@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/css/groupe5/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <title>Portfolio - groupe 5</title>
+
+
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <div class="container-fluid" style="padding:0px;">
+        {% include "Article/navbar.html.twig" %}
+    </div>
+
+    <audio id="tir" preload="auto">
+        <source src="/assets/sounds/tir.mp3">
+    </audio>
+
+    <main class="mainRow">
+
+        <!-- ECRAN D'ACCUEIL FORMAT ORDINATEUR -->
+        <div class="container d-none d-md-block">
+            <div class="row">
+                <div class="text-center" id="mainTitle">
+                    <span>WILD<br>DEV</span>
+                </div>
+                <div id="cloud1">
+                    <img src="/assets/images/groupe5/cloud1.png" alt="big cloud">
+                </div>
+                <div id="cloud2">
+                    <img src="/assets/images/groupe5/cloud2.png" alt="little cloud">
+                </div>
+                <div class="text-center vignette" id="vignette1">
+                    <div class="text-center">
+                        <button type="button" class="rounded-circle" id="vignette-item1"
+                            data-toggle="modal" data-target="#modalMagali"></button>
+                    </div>
+                    <div>
+                        <h2 class="name" id="titreVignette1">Name loaded in JS</h2>
+                    </div>
+                </div>
+                <div class="text-center vignette" id="vignette2">
+                    <div class="text-center">
+                        <button type="button" class="rounded-circle" id="vignette-item2"
+                            data-toggle="modal" data-target="#modalMagali"></button>
+                    </div>
+                    <div>
+                        <h2 class="name" id="titreVignette2">Name loaded in JS</h2>
+                    </div>
+                </div>
+                <div class="text-center vignette" id="vignette3">
+                    <div class="text-center">
+                        <button type="button" class="rounded-circle" id="vignette-item3"
+                            data-toggle="modal" data-target="#modalMagali"></button>
+                    </div>
+                    <div>
+                        <h2 class="name" id="titreVignette3">Name loaded in JS</h2>
+                    </div>
+                </div>
+                <div class="text-center vignette" id="vignette4">
+                    <div class="text-center">
+                        <button type="button" class="rounded-circle" id="vignette-item4"
+                            data-toggle="modal" data-target="#modalMagali"></button>
+                    </div>
+                    <div>
+                        <h2 class="name" id="titreVignette4">Name loaded in JS</h2>
+                    </div>
+                </div>
+                <div class="text-center vignette" id="vignette5">
+                    <div class="text-center">
+                        <button type="button" class="rounded-circle" id="vignette-item5"
+                            data-toggle="modal" data-target="#modalMagali"></button>
+                    </div>
+                    <div>
+                        <h2 class="name" id="titreVignette5">Name loaded in JS</h2>
+                    </div>
+                </div>
+                <div class="text-center vignette" id="vignette6">
+                    <div class="text-center">
+                        <button type="button" class="rounded-circle" id="vignette-item6"
+                            data-toggle="modal"></button>
+                    </div>
+                    <div>
+                        <h2 class="name" id="titreVignette6">Name loaded in JS</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN ECRAN D'ACCUEIL FORMAT ORDI -->
+
+        <!-- ECRAN D'ACCUEIL FORMAT TELEPHONE -->
+        <div class="d-block d-md-none">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed text-left" id="button1" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <img src="/assets/images/groupe5/stephane-chapeau.png" alt="Wilder1">
+                            <span>Stéphane Guinot</span>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse collapseMobile" data-parent="#accordion">
+                    <div class="card-body">
+                        <p class="wanted text-center">WANTED for 1000 $</p>
+                        <object id="object1" data="contentStephane.html"></object>
+                        <div class="text-center" id="link1">
+                            <a id="linkedinLogo1" href="https://www.linkedin.com/in/stephane-guinot-47a6aa97/"><img src="/assets/images/groupe5/linkedInLogo.png"
+                                    alt="linkedIn link"></a>
+                            <a class="gitHubLogo" id="gitHubLogo1" href="https://github.com/StephaneGNT"><img src="/assets/images/groupe5/gitHubLogo.png"
+                                    alt="Logo link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed text-left" id="button2" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+                            <img src="/assets/images/groupe5/zakaria-chapeau.png" alt="Wilder2">
+                            <span>Zakaria Hamichi</span>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse collapseMobile" data-parent="#accordion">
+                    <div class="card-body">
+                        <p class="wanted text-center">WANTED for 1000 $</p>
+                        <object id="object2" data="contentZakaria.html"></object>
+                        <div class="text-center" id="link2">
+                            <a id="linkedinLogo2" href="https://www.linkedin.com/in/zakaria-hamichi-ab8893170/"><img
+                                    src="/assets/images/groupe5/linkedInLogo.png" alt="linkedIn link"></a>
+                            <a class="gitHubLogo" id="gitHubLogo2" href="https://github.com/ZakariaHamichi"><img src="/assets/images/groupe5/gitHubLogo.png"
+                                    alt="Logo link"></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed text-left" id="button3" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseOne">
+                            <img src="/assets/images/groupe5/hugo-chapeau.png" alt="Wilder1">
+                            <span>Hugo Hontans</span>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse collapseMobile" data-parent="#accordion">
+                    <div class="card-body">
+                        <p class="wanted text-center">WANTED for 1000 $</p>
+                        <object id="object3" data="contentHugo.html"></object>
+                        <div class="text-center" id="link3">
+                            <a id="linkedinLogo3" href="https://www.linkedin.com/in/hugo-hontans-34b798170/"><img src="/assets/images/groupe5/linkedInLogo.png"
+                                    alt="linkedIn link"></a>
+                            <a class="gitHubLogo" id="gitHubLogo3" href="https://github.com/Hugo-Hontans"><img src="/assets/images/groupe5/gitHubLogo.png"
+                                    alt="Logo link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed text-left" id="button4" data-toggle="collapse"
+                            data-target="#collapseFour" aria-expanded="false" aria-controls="collapseOne">
+                            <img src="/assets/images/groupe5/mathieu-chapeau.png" alt="Wilder1">
+                            <span>Mathieu Kanel</span>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse collapseMobile" data-parent="#accordion">
+                    <div class="card-body">
+                        <p class="wanted text-center">WANTED for 1000 $</p>
+                        <object id="object4" data="contentMathieu.html"></object>
+                        <div class="text-center" id="link4">
+                            <a id="linkedinLogo4" href="https://www.linkedin.com/in/mathieu-kanel-64233b160/"><img src="/assets/images/groupe5/linkedInLogo.png"
+                                    alt="linkedIn link"></a>
+                            <a class="gitHubLogo" id="gitHubLogo4" href="https://github.com/Nexter73"><img src="/assets/images/groupe5/gitHubLogo.png"
+                                    alt="Logo link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed text-left" id="button5" data-toggle="collapse"
+                            data-target="#collapseFive" aria-expanded="false" aria-controls="collapseOne">
+                            <img src="/assets/images/groupe5/magali-chapeau.png" alt="Wilder1">
+                            <span>Magali Klein</span>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse collapseMobile" data-parent="#accordion">
+                    <div class="card-body">
+                        <p class="wanted text-center">WANTED for 1000 $</p>
+                        <object id="object5" data="contentMagali.html"></object>
+                        <div class="text-center" id="link5">
+                            <a id="linkedinLogo5" href="https://www.linkedin.com/in/klein-magali/?originalSubdomain=fr"
+                                target="_blank"><img src="/assets/images/groupe5/linkedInLogo.png" alt="linkedIn link"></a>
+                            <a class="gitHubLogo" id="gitHubLogo5" href="https://github.com/Pelican07" target="_blank"><img
+                                    src="/assets/images/groupe5/gitHubLogo.png" alt="Logo link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed text-left" id="button6" data-toggle="collapse"
+                            data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <img src="/assets/images/groupe5/marion-chapeau.png" alt="Wilder1">
+                            <span>Marion Koosinlin</span>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseSix" class="collapse collapseMobile" data-parent="#accordion">
+                    <div class="card-body">
+                        <p class="wanted text-center">WANTED for 1000 $</p>
+                        <object id="object6" data="contentMarion.html"></object>
+                        <div class="text-center" id="link6">
+                            <a id="linkedinLogo6" href="https://www.linkedin.com/in/marion-koo-sin-lin-150161114/"
+                                target="_blank"><img src="/assets/images/groupe5/linkedInLogo.png" alt="linkedIn link"></a>
+                            <a class="gitHubLogo" id="gitHubLogo6" href="https://github.com/Yumenotsuki" target="_blank"><img
+                                    src="/assets/images/groupe5/gitHubLogo.png" alt="Logo link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN ÉCRAN D'ACCUEIL FORMAT MOBILE -->
+
+        <!-- MODALES -->
+        <div class="modal fade" id="modalhugo" tabindex="-1" role="dialog"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-lg-body">
+                        <div class="Modale container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row divAffiche">
+                                        <img class="col-12 Affiche" src="/assets/images/groupe5/afficheHugo.png" alt="Affiche Hugo">
+                                    </div>
+                                    <p style="opacity:0">$</p>
+                                </div>
+                                <div class="col-6">
+                                    <object data="/assets/page/groupe5/contenthugo.html"></object>
+                                    <div class="liens text-center" id="link7">
+                                        <a href="https://www.linkedin.com/in/hugo-hontans-34b798170/" target="_blank"><img
+                                                src="/assets/images/groupe5/linkedInLogo.png" alt="linkedIn link" class="linkedInLogo"></a>
+                                        <a href="https://github.com/Hugo-Hontans" target="_blank"><img src="/assets/images/groupe5/gitHubLogo.png"
+                                                alt="Logo link" class="gitHubLogo"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalzakaria" tabindex="-1" role="dialog"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-lg-body">
+                        <div class="Modale container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row divAffiche">
+                                        <img class="col-12 Affiche" src="/assets/images/groupe5/afficheZak.png" alt="Affiche Zak">
+                                    </div>
+                                    <p style="opacity:0">$</p>
+                                </div>
+                                <div class="col-6">
+                                    <object data="/assets/page/groupe5/contentzakaria.html"></object>
+                                    <div class="liens text-center">
+                                        <a href="https://www.linkedin.com/in/zakaria-hamichi-ab8893170/" target="_blank"><img
+                                                src="/assets/images/groupe5/linkedInLogo.png" alt="linkedIn link" class="linkedInLogo"></a>
+                                        <a href="https://github.com/ZakariaHamichi" target="_blank"><img src="/assets/images/groupe5/gitHubLogo.png"
+                                                alt="Logo link" class="gitHubLogo"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalstephane" tabindex="-1" role="dialog"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-lg-body">
+                        <div class="Modale container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row divAffiche">
+                                        <img class="col-12 Affiche" src="/assets/images/groupe5/afficheStephane.png" alt="Affiche Stéphane">
+                                    </div>
+                                    <p style="opacity:0">$</p>
+                                </div>
+                                <div class="col-6">
+                                    <object data="/assets/page/groupe5/contentstephane.html"></object>
+                                    <div class="liens text-center">
+                                        <a href="https://www.linkedin.com/in/stephane-guinot-47a6aa97/" target="_blank"><img
+                                                src="/assets/images/groupe5/linkedInLogo.png" alt="linkedIn link" class="linkedInLogo"></a>
+                                        <a href="https://github.com/StephaneGNT" target="_blank"><img src="/assets/images/groupe5/gitHubLogo.png"
+                                                alt="Logo link" class="gitHubLogo"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalmathieu" tabindex="-1" role="dialog"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-lg-body">
+                        <div class="Modale container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row divAffiche">
+                                        <img class="col-12 Affiche" src="/assets/images/groupe5/afficheMathieu.png" alt="Affiche Mathieu">
+                                    </div>
+                                    <p style="opacity:0">$</p>
+                                </div>
+                                <div class="col-6">
+                                    <object data="/assets/page/groupe5/contentmathieu.html"></object>
+                                    <div class="liens text-center">
+                                        <a href="https://www.linkedin.com/in/mathieu-kanel-64233b160/" target="_blank"><img
+                                                src="/assets/images/groupe5/linkedInLogo.png" alt="linkedIn link" class="linkedInLogo"></a>
+                                        <a href="https://github.com/Nexter73" target="_blank"><img src="/assets/images/groupe5/gitHubLogo.png"
+                                                alt="Logo link" class="gitHubLogo"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalmagali" tabindex="-1" role="dialog" 
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-lg-body">
+                        <div class="Modale container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row divAffiche">
+                                        <img class="col-12 Affiche" src="/assets/images/groupe5/afficheMagali.png" alt="Affiche Magali">
+                                    </div>
+                                    <p style="opacity:0">$</p>
+                                </div>
+                                <div class="col-6">
+                                    <object data="/assets/page/groupe5/contentmagali.html"></object>
+                                    <div class="liens text-center">
+                                        <a href="https://www.linkedin.com/in/klein-magali/?originalSubdomain=fr" target="_blank"><img
+                                                src="/assets/images/groupe5/linkedInLogo.png" alt="linkedIn link" class="linkedInLogo"></a>
+                                        <a href="https://github.com/Pelican07" target="_blank"><img src="/assets/images/groupe5/gitHubLogo.png"
+                                                alt="Logo link" class="gitHubLogo"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalmarion" tabindex="-1" role="dialog"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-lg-body">
+                        <div class="Modale container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row divAffiche">
+                                        <img class="col-12 Affiche" src="/assets/images/groupe5/afficheMarion.png" alt="Affiche Marion">
+                                    </div>
+                                    <p style="opacity:0">$</p>
+                                </div>
+                                <div class="col-6">
+                                    <object data="/assets/page/groupe5/contentmarion.html"></object>
+                                    <div class="liens text-center">
+                                        <a href="https://www.linkedin.com/in/marion-koo-sin-lin-150161114/" target="_blank"><img
+                                                src="/assets/images/groupe5/linkedInLogo.png" alt="linkedIn link" class="linkedInLogo"></a>
+                                        <a href="https://github.com/Yumenotsuki" target="_blank"><img src="/assets/images/groupe5/gitHubLogo.png"
+                                                alt="Logo link" class="gitHubLogo"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+
+        </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="/assets/js/groupe5/script.js"></script>
+</body>
+
+</html>

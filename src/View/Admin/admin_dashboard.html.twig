@@ -1,0 +1,132 @@
+{% extends "admin_layout.html.twig" %}
+
+{% block content %}
+    <div class="container-fluid" id="sessionAdmin">
+        {% if connexionMessage %}
+
+            <div id="alert" class="alert alert-success">
+                <div>Bonjour {{ user.firstname | capitalize  }}</div>
+                <p>{{ connexionMessage }}</p>
+            </div>
+
+        {% endif %}
+
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-white" style="text-align:center;">Derniers utilisateurs inscrits</h3>
+            </div>
+        </div>
+
+        <!-- Ajout des 3 divs pour chacun des élements, totalComments, totalUser, totalArticles sont des éléments récupérés de l'adminController -->
+        {#------------------BLOCK USERS--------------------#}
+        <div class="row mt-2 justify-content-center">
+            <div class="col-sm-12 col-md-5 col-lg-3 justify-content-center">
+                <div class="card text-white bg-info mb-3" style="min-height: 12rem;">
+                    <div class="card-header" style="text-align:center; font-size: 1.6rem;">
+                        <a href="/admin/users" class="text-white">Nombre total d'utilisateurs</a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title dashboardCount" style="text-align: center">{{ totalUsers }}</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            {% for lastuser in lastusers %}
+                <div class="col-sm-12 col-md-5 col-lg-3">
+                    <a href="/admin/user/{{ lastuser.id }}">
+                        <div class="card cardFondDashboard" style="">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ lastuser.firstname }} {{ lastuser.lastname }}</h5>
+                                <h6 class="card-subtitle mb-2">{{ lastuser.email}}</h6>
+                                <p class="card-text">enregistré le : {{ lastuser.registered }}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+
+        </div>
+
+        <hr style="border: solid 0.5px #50E3C2; width: 65%">
+
+        {#--------------------BLOCK ARTICLES--------------------------#}
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-white" style="text-align:center;">Derniers articles publiés</h3>
+            </div>
+        </div>
+        <div class="row mt-2 justify-content-center">
+
+            <div class="col-sm-12 col-md-5 col-lg-3">
+                <div class="card text-white bg-success mb-3" style="min-height: 12rem;">
+                    <div class="card-header" style="text-align:center; font-size: 1.6rem;">
+                        <a href="/admin/articles" class="text-white">Nombre total d'articles</a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title dashboardCount">{{ totalArticles }}</h5>
+                    </div>
+                </div>
+            </div>
+
+            {% for lastarticle in lastarticles %}
+                <div class="col-sm-12 col-md-5 col-lg-3">
+                    <a href="/admin/article/{{ lastarticle.id }}">
+                        <div class="card cardFondDashboard" style="">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2">rédigé le : {{ lastarticle.date }}</h6>
+                                <h5 class="card-title">{{  lastarticle.title|truncate(22)}}</h5>
+                                <p class="card-text">{{ lastarticle.content|truncate(70) }}</p>
+                            </div>
+                        </div>
+                </div>
+                </a>
+            {% endfor %}
+
+        </div>
+        <hr style="border: solid 0.5px #50E3C2; width: 65%">
+
+        {#-----------------------------BLOCK COMMENTS--------------------------------------#}
+        <div class="row">
+            <div class="col-12 ">
+                <h3 class="text-white" style="text-align:center;">Derniers commentaires publiés</h3>
+            </div>
+        </div>
+        <div class="row mt-2 justify-content-center">
+            <div class="col-sm-12 col-md-5 col-lg-3">
+                <div class="card text-black bg-warning mb-3" style="min-height: 12rem;">
+                    <div class="card-header"style="text-align:center; font-size: 1.6rem;">
+                        <a href="/admin/comments" class="text-white">Nombre total de commentaires</a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title dashboardCount text-white">{{ totalComments }}</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            {% for lastcomment in lastcomments %}
+                <div class="col-sm-12 col-md-5 col-lg-3">
+                    <a href="/admin/comments">
+                        <div class="card cardFondDashboard">
+                            <div class="card-body">
+                                <p class="card-text">{{ lastcomment.userFirstname }} {{ lastcomment.userLastname }} a commenté l'article : {{ lastcomment.articleTitle|truncate(20) }}, le {{ lastcomment.date}}</p>
+                                <p class="card-text"><strong>Commentaire :</strong> {{ lastcomment.content|truncate(70) }}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+            {% endfor %}
+        </div>
+
+    </div>
+
+
+
+
+{% endblock content %}
+
+
+

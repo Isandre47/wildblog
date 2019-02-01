@@ -1,0 +1,323 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>DEvelopers on DEmand</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/groupe3/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!--NavBar-->
+    <header>
+        <div class="container-fluid" style="padding:0px;">
+            {% include "Article/navbar.html.twig" %}
+        </div>
+
+    </header>
+    <!--Fin NavBar-->
+
+
+    <div class="container-fluid ">
+
+        <div class="d-none d-lg-block ">
+            <!--Titre-->
+            <h1>DEvelopers on DEmand</h1>
+            <!--fin titre-->
+            <div class="container-fluid">
+                <div class="row photo-ligne ">
+                    <div class="col photo2 photographie"><a href="#" data-toggle="modal" data-target="#Jeff">
+                            <img class="card-img-top img-fluid special" src="https://via.placeholder.com/350x350" alt="Card image cap"></a>
+                    </div>
+                    <div class="col photo3 photographie"><a href="#" data-toggle="modal" data-target="#Julien">
+                            <img class="card-img-top img-fluid special" src="https://via.placeholder.com/350x350" alt="Card image cap"></a>
+                    </div>
+                    <div class="col photo4 photographie"><a href="#" data-toggle="modal" data-target="#Lea">
+                            <img class="card-img-top img-fluid special" src="https://via.placeholder.com/350x350" alt="Card image cap"></a>
+                    </div>
+                    <div class="col photo5 photographie"><a href="#" data-toggle="modal" data-target="#Matthieu">
+                            <img class="card-img-top img-fluid special" src="https://via.placeholder.com/350x350" alt="Card image cap"></a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col p2 photographie2"></div>
+                    <div class="col p3 photographie2"></div>
+                    <div class="col p4 photographie2"></div>
+                    <div class="col p5 photographie2"></div>
+                </div>
+            </div>
+        </div>
+
+        <!------VERSION MOBILE------>
+
+        <div class="d-lg-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 photo-groupe">
+                    </div>
+                    <h2 class="titre-mobile">DEvelopers on DEmand</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <a href="#" data-toggle="modal" data-target="#Matthieu">
+                                <img class="card-img-top img-fluid" src="/assets/images/groupe3/Profil_Matthieu_dos.jpg" alt="Card image cap"></a>
+                            <div class="card-body person-content">
+                                <h4 class="card-text person-name text-center"><span>Mathieu De Armey</span></h4>
+                                <div class="person-role text-center">Développeur frontend</div>
+                                <div class="person-links">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <a href="#" data-toggle="modal" data-target="#Jeff">
+
+                                <img class="card-img-top img-fluid" src="/assets/images/groupe3/Profil_Jeff_dos.jpg" alt="Card image cap"></a>
+
+                            <div class="card-body person-content">
+                                <h4 class="card-text person-name text-center">Jef De Conti</h4>
+                                <div class="person-role text-center">Developpeur PHP</div>
+                                <div class="person-links">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <a href="#" data-toggle="modal" data-target="#Julien">
+
+                                <img class="card-img-top img-fluid" src="/assets/images/groupe3/Profil_Julien_dos.jpg" alt="Card image cap"></a>
+
+                            <div class="card-body person-content">
+                                <h4 class="card-text person-name text-center">Chevrot Julien</h4>
+                                <div class="person-role text-center">Développeur JAVA</div>
+                                <div class="person-links">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <a href="#" data-toggle="modal" data-target="#Lea">
+
+                                <img class="card-img-top img-fluid" src="/assets/images/groupe3/Profil_Lea_dos.jpg" alt="Card image cap"></a>
+
+                            <div class="card-body person-content">
+                                <h4 class="card-text person-name text-center">Lea Delacotte</h4>
+                                <div class="person-role text-center">Développeuse JS</div>
+                                <div class="person-links">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </button-->
+
+    <!-- MODALES -->
+
+
+    <!-- Modal Léa-->
+    <div class="modal fade" id="Lea" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-10 ">
+                    <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6"><img src="/assets/images/groupe3/Profil_Lea_face.jpg" class="img-fluid" /></div>
+                            <div class="col-md-6 ml-auto right">
+                                <div class="nom_center">
+                                    <h2 class="prénom">Lea</h2>
+                                    <h2 class="nom">Delacotte</h2>
+                                    <h3>Développeuse JS</h3>
+                                </div>
+                                <div class="contenu">
+                                    <div class="description">
+                                        <p> Couteau suisse créatif, grande amatrice du combo café-cookie,
+                                            je voue également un culte aux projets créatifs et initiatives
+                                            qui font-du-bien-à-la-planète-et-aux-gens !</p>
+                                    </div>
+                                    <div class="link">
+                                        <a href="https://github.com/thebluelephant" target="_blank"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/léa-delacotte-22b99914a/" target="_blank">
+                                            <i class="fab fa-linkedin"></i></a>
+                                        <a href="mailto:lea.delacotte@gmail.com" target="_blank"><i class="fas fa-envelope-square"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!--fin léa-->
+    <!--modal Mathieu-->
+    <div class="modal fade" id="Matthieu" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-10 ">
+                    <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6"><img src="/assets/images/groupe3/Profil_Matthieu_face.jpg" class="img-fluid" /></div>
+                            <div class="col-md-6 ml-auto right">
+                                <div class="nom_center">
+                                    <h2 class="prénom">Mathieu</h2>
+                                    <h2 class="nom">De Armey</h2>
+                                    <h3>Développeur front end junior</h3>
+                                </div>
+                                <div class="contenu">
+                                    <div class="description">
+                                        <p> Ancien formateur d’anglais, responsable d’association, et commercial,
+                                            je veux créer des applications mobiles ergonomiques et fonctionnelles pour
+                                            améliorer les performances des entreprises et
+                                            organisations.
+                                        </p>
+                                    </div>
+                                    <div class="link">
+                                        <a href="https://github.com/famousfour" target="_blank"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/mathieu-de-armey-81198095" target="_blank"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://twitter.com/matdearmey" target="_blank"><i class="fab fa-twitter"></i></a>
+
+                                        <a href="mailto:mdearmey@gmail.com" target="_blank"><i class="fas fa-envelope-square"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--fin Mathieu-->
+    <!--Modal julien-->
+    <div class="modal fade" id="Julien" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-10">
+                    <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6"><img src="/assets/images/groupe3/Profil_Julien_face.jpg" class="img-fluid" /></div>
+                            <div class="col-md-6 ml-auto right">
+                                <div class="nom_center">
+                                    <h2 class="prénom">Julien</h2>
+                                    <h2 class="nom">Chevrot</h2>
+                                    <h3>Développeur JAVA</h3>
+                                </div>
+                                <div class="contenu">
+                                    <div class="description">
+                                        <p>Technicien du son, developpeur junior,
+                                            je souhaite diversifier mes compétences;
+                                            un nouveau langage pour un nouveau monde.
+                                            Le web vous attend. Come on! </p>
+                                    </div>
+                                    <div class="link ">
+                                        <a href="https://github.com/juliendcode" target="_blank"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                        <a href="https://twitter.com/dcodejulien" target="_blank"><i class="fab fa-twitter"></i></a>
+                                        <a href="mailto:juliendcode@gmail.com" target="_blank"><i class="fas fa-envelope-square"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--fin Julien-->
+    <!--Modal Jef-->
+    <div class="modal fade" id="Jeff" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-10">
+                    <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6"><img src="/assets/images/groupe3/Profil_Jeff_face.jpg" class="img-fluid" /></div>
+                            <div class="col-md-6 ml-auto right">
+                                <div class="nom_center">
+                                    <h2 class="prénom">Jef</h2>
+                                    <h2 class="nom">De Conti</h2>
+                                    <h3>Développeur PHP</h3>
+                                </div>
+                                <div class="contenu">
+                                    <div class="description">
+                                        <p>Après plusieurs vies dans l'événementiel et la communication,
+                                            me voilà enfin à ma place !</p>
+                                    </div>
+                                    <div class="link">
+                                        <a href="https://github.com/JefDc" target="_blank"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/jef-de-conti-66881616b/" target="_blank"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="https://twitter.com/DeContiJef" target="_blank"><i class="fab fa-twitter"></i></a>
+                                        <a href="mailto:de.conti.jf@gmail.com" target="_blank"><i class="fas fa-envelope-square"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin Jef-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

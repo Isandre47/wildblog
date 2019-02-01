@@ -1,0 +1,185 @@
+/* Carousel */
+@font-face {
+	font-family: "FiraSansLight";
+	src: url('/../../fonts/groupe1/FiraSans-ExtraLight.ttf');
+}
+@font-face {
+	font-family: "FiraSansMedium";
+    font-weight: Bold;
+	src: url('/../../fonts/groupe1/FiraSans-Medium.ttf');
+}
+@font-face {
+	font-family: "FiraSansXtraLight";
+	src: url('/../../fonts/groupe1/FiraSans-ExtraLight.ttf');
+}
+
+body {
+    font-family: 'FiraSansLight';
+}
+
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+  /* Control buttons  */
+  /* Previous button  */
+  /* Next button  */
+  /* Changes the position of the indicators */
+  /* Changes the color of the indicators */
+}
+
+#quote-carousel .carousel-control {
+    background: none;
+    color: black;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+    bottom:inherit;
+}
+
+#quote-carousel .carousel-indicators {
+    bottom: initial;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    display: none;
+}
+
+#img-fond {
+    background-color: #E9E8E6 !important;
+    max-height: 450px;
+}
+
+.titre {
+    font-size: 55px;
+    font-family: 'FiraSansXtraLight' !important;
+    top: 100px; 
+    padding-top: 50px;
+    padding-bottom: 50px; 
+    background-color: #E9E8E6 !important;
+    margin-bottom: -30px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'FiraSansMedium';
+    font-size: 35px;
+}
+
+h2 {
+   font-size: 25px; 
+}
+
+.Nom {
+    margin-top: 25px;
+}
+
+i {
+    color: #FBA858;
+    cursor:pointer;
+    outline:none;
+}
+
+.carousel-indicators li {
+    min-width: 120px;
+    min-height: 120px;
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    border: 6px solid #CCC;
+    border-radius:100px;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+#quote-carousel .carousel-indicators .active {
+    background: #333333;
+    width: 175px;
+    height: 175px;
+    border-radius: 100%;
+    border-color: darkorange;
+    opacity: 1;
+    overflow: hidden;
+    padding: 80px;
+    margin: 0px;
+}
+
+.logowcs{
+    display: inline-block;
+    padding-right: 20px; 
+}
+
+.carousel-control-next{
+    max-height: 250px;
+}
+
+.carousel-control-prev{
+    max-height: 250px;
+}
+
+.carousel-inner {
+    min-height: 300px;
+    top: 250px;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+.carousel-indicators > li {
+  min-width: 100px;
+  min-height: 100px;
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+  border: 4px solid #CCC;
+  border-radius:100%;
+  opacity: 0.4;
+  overflow: hidden;
+  transition: all 0.4s;
+  display: flex;
+}
+#quote-carousel > .carousel-indicators .active {
+  background: #333333;
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  border-color: darkorange;
+  opacity: 1;
+  overflow: hidden;
+  display: flex;
+}
+}
+
+@media (max-width: 767.98px) { 
+  #quote-carousel > .carousel-indicators > li {
+  display: none;
+  } 
+
+#quote-carousel > .carousel-indicators .active {
+    background: #333333;
+    width: 25%;
+    height: 50%;
+    border-radius: 50%;
+    border-color: darkorange;
+    opacity: 1;
+    overflow: hidden;
+    display: block;
+    margin:20px;
+}
+    
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: darkorange;
+    border-radius: 25px;
+    position:inherit;
+    padding: 20px 15px 20px 15px;
+    top: 100px;
+    right: 10px;
+    display: block;
+}
+
+.carousel-control-next-icon{
+    right: 5px;
+} 
+    
+.carousel-control-prev-icon{
+    left: 5px;
+}
+}    

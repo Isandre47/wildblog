@@ -1,0 +1,35 @@
+{% extends "admin_layout.html.twig" %}
+
+{% block content %}
+
+    <div class="container">
+        {# show an article #}
+        <div class="row mt-5">
+            <div class="col-12">
+                <h1 class="articleTitre">{{ article.title }}</h1>
+                <p class="lead">Rédigé le {{ article.date }} par {{ article.userFirstname }} {{ article.userLastname }}</p>
+
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <img class="imageOneArticle" src="/assets/images/{{ article.picture }}" alt="Generic placeholder image">
+            </div>
+        </div>
+        <div class="row d-flex mt-5">
+            <div class="col-12">
+                <p class="lead">{{ article.content | nl2br}}</p>
+            </div>
+            {#</div>#}
+        </div>
+
+    <a href="/admin/article/edit/{{ article.id }}" target="">
+        <button type="submit" class="btn btn-warning">Modifier</button></a>
+</div>
+{% endblock content %}
+
+
+
+
+

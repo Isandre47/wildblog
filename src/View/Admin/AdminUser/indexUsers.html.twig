@@ -1,0 +1,53 @@
+{% extends "admin_layout.html.twig" %}
+
+{% block content %}
+
+    <div class="container">
+        <h1 class="text-white titlePageAdmin">Tous les utilisateurs</h1>
+            <div class="row justify-content-end">
+        <div class="col-10 align-self-end addNewUser">
+        </div>
+
+            {#<a class="btn btn-warning" href="/admin/user/createUser">Créer un utilisateur</a>#}
+        {#</div>#}
+        <table class="table table-striped text-white text-center">
+            <thead class="thead-light">
+            <tr>
+                <th scope="col">NOM</th>
+                <th scope="col">PRÉNOM</th>
+                <th scope="col">EMAIL</th>
+                <th scope="col">DATE DE CRÉATION</th>
+                <th scope="col">STATUS</th>
+                <th scope="col">VOIR</th>
+                <th scope="col">SUPPRIMER</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for user in users %}
+
+                <tr>
+                    <td>{{ user.lastname }}</td>
+                    <td>{{ user.firstname }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.registered }}</td>
+                    <td>{{ user.status }}</td>
+                    <td>
+                        <a href="/admin/user/{{ user.id }}" target="">
+                            <button type="submit" class="btn btn-warning"><i class="far fa-eye"></i></button></a>
+                    </td>
+                    <td>
+                        <a href="/admin/user/delete/{{ user.id }}" target="" data-confirm="Etes-vous certain de vouloir supprimer?">
+                            <button type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i></button></a>
+                    </td>
+                </tr>
+
+            {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+    <br/>
+{% endblock content %}
+
+
+

@@ -1,0 +1,27 @@
+{
+    "name": "aurel/simple-mvc",
+    "description": "Simple from scratch PHP MVC",
+    "authors": [
+        {
+            "name": "Aurelien",
+            "email": "barbier.aurelien@wildcodeschool.fr"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php" : ">=7",
+        "ext-pdo" : "*",
+        "nikic/fast-route": "^1.2",
+        "twig/twig": "^2.4",
+        "twig/extensions": "^1.5"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/",
+            "App\\": "app/"
+        }
+    }
+}

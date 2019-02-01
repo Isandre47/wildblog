@@ -1,0 +1,330 @@
+@font-face {
+    font-family: 'geosanslightregular';
+    src: url('/assets/fonts/groupe3/geo/geosanslight-webfont.woff2') format('woff2'),
+         url('/assets/fonts/groupe3/geo/geosanslight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sketch_blockbold';
+    src: url('/assets/fonts/groupe3/sket/sketch_block-webfont.woff2') format('woff2'),
+         url('/assets/fonts/groupe3/sket/sketch_block-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.navbar-brand {
+    padding-left: 20px;
+}
+
+* { margin: 0; padding: 0; }
+
+.photographie
+{
+height:60vw;
+background-size: cover;
+
+}
+
+.photo2
+{
+background-image: url("/assets/images/groupe3/Jeffdos.jpg");
+z-index:2;
+}
+
+.photo2:hover
+{
+background-image: url("/assets/images/groupe3/Jeffface.jpg");
+}
+
+.photo3
+{
+background-image: url("/assets/images/groupe3/Juliendos.jpg");
+z-index:2;
+}
+
+.photo3:hover
+{
+background-image: url("/assets/images/groupe3/Julienface.jpg");
+}
+
+.photo4
+{
+background-image: url("/assets/images/groupe3/Leados.jpg");
+z-index:2;
+}
+
+.photo4:hover
+{
+background-image: url("/assets/images/groupe3/Leaface.jpg");
+}
+
+.photo5
+{
+background-image: url("/assets/images/groupe3/Matthieudos.jpg");
+z-index:2;
+}
+
+.photo5:hover
+{
+background-image: url("/assets/images/groupe3/Matthieuface.jpg");
+}
+
+.special
+{
+height: 60vw;
+background-size: cover;
+opacity: 0;
+
+}
+
+
+
+
+
+
+
+.photographie2 {
+height: 60vw;
+margin-top: -60vw;
+background-size: cover;
+}
+
+
+h4 {
+    font-family: 'sketch_blockbold', arial;
+}
+
+
+
+
+.nom
+{
+font-size: 3rem;
+font-family: 'sketch_blockbold', serif;
+}
+
+.prénom
+{
+margin-top: 1rem;
+font-size: 3rem;
+font-family: 'sketch_blockbold', serif;
+}
+
+h3
+{
+font-size: 1.5rem;
+font-family: 'Arbutus Slab', serif;
+}
+
+.description
+{
+margin-top: 1.9rem;
+font-size: 1.2rem;
+line-height: 1.5rem;
+font-family: 'geosanslightregular';
+height: 80%;
+}
+
+.person-role {
+    font-family: "geosanslightregular";
+}
+
+.link a+a
+{
+margin-left: 2rem;
+}
+
+.nom_center
+{
+text-align: center;
+margin-bottom: 0;
+height: 35%;
+}
+
+
+.contenu {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding-top: 3%;
+    height: 62%;
+}
+
+
+
+
+h1 {
+    font-family: 'sketch_blockbold', arial; 
+    margin-top: 5vw;
+    border-radius: 10px; 
+    font-size: 4.8vw;
+    position: absolute;
+    margin-left: 3.7rem;
+    width: 80%;
+    z-index: 4;
+    color: rgb(250, 214, 9);
+    }
+/*
+
+.tete
+{
+    font-family: 'Detroit Ghetto';
+    font-size: 5rem;
+    margin-left: 5rem;
+}
+
+
+/*photo groupe en version mobile */
+.photo-groupe {  
+    margin-bottom: 3%;
+    margin: 0;
+    background-size: 100%;
+    margin-top: 10vw; 
+    height: 30vw;
+    width: 100%;
+    background-image: url("/assets/images/groupe3/Photogroupe.jpg");
+    background-attachment: fixed; 
+    margin-top: 2vw; 
+    margin-bottom: 3vw;
+    border-radius: 0.7vw;
+    box-shadow: inset 0 -22px 10px -10px white;
+    background-repeat: no-repeat;
+}
+/*fin photo groupe en version mobile */
+
+h2.titre-mobile {
+    font-family: 'sketch_blockbold', arial;
+    margin-top: -2%;
+    border-radius: 10px; 
+    font-size: 5.5vw;
+    text-align: center; 
+    width: 100%;
+    z-index: 4;
+    color: rgb(158, 137, 17);
+}
+
+ .fab {
+    color: #3886a5;
+    font-size: 2.5em;
+  }
+
+  .fas {
+    color: #3886a5;
+    font-size: 2.5em;
+  }
+  .fab:hover {
+    color: #31748fc9;
+    }
+.fas:hover {
+        color: #31748fc9;
+        }
+
+  .img-fluid {
+    margin:0;
+    padding:2px;
+    border:2px transparent ;
+ }
+
+ .modal-header {
+    background-color: #f3cc4c
+    }
+.modal-body {
+    padding-bottom: 30px; 
+}
+
+.link {
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+h2.nom
+{
+    font-size: 2rem;
+}
+
+@media only screen   /* animation tablette paysage à mettre à la fin du fichier css */
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+
+.p2 {
+background-image: url("/assets/images/groupe3/Jeffface.jpg");
+z-index: 1;
+animation-name: s1;
+animation-duration: 10s; 
+transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
+animation-iteration-count: infinite;
+}
+
+.p3 {
+background-image: url("/assets/images/groupe3/Julienface.jpg");
+z-index: 1;
+animation-duration: 10s; 
+transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
+animation-iteration-count: infinite;
+animation-name: s2;
+}
+
+.p4 {
+background-image: url("/assets/images/groupe3/Leaface.jpg");
+z-index: 1;
+animation-duration: 10s; 
+transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
+animation-iteration-count: infinite;
+animation-name: s3;
+}
+
+.p5 {
+background-image: url("/assets/images/groupe3/Matthieuface.jpg");
+z-index: 1;
+animation-duration: 10s; 
+transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
+animation-iteration-count: infinite;
+animation-name: s4;
+}
+
+@keyframes s1 {
+0% {z-index:1}
+23% {z-index:3}
+27% {z-index:1}
+69% {z-index:1}
+82% {z-index:1} 
+}
+
+@keyframes s2 {
+0% {z-index:1}
+23% {z-index:1}
+46% {z-index:3}
+49% {z-index:1}
+82% {z-index:1} 
+}
+
+
+@keyframes s3 {
+0% {z-index:1}
+23% {z-index:1}
+46% {z-index:1}
+64% {z-index:3}
+83% {z-index:1} 
+}
+
+
+@keyframes s4 {
+0% {z-index:1}
+23% {z-index:1}
+46% {z-index:1}
+69% {z-index:1}
+97% {z-index:3} 
+}
+}
+
+/* fin animation */
+

@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="/assets/css/groupe9/page9.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<title>AirWild</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<header>
+            {% include "Article/navbar.html.twig" %}
+		</header>
+
+
+
+
+		<div class="project">
+
+			<h1>AirWild</h1>
+
+			<div class="container">
+				<!--CLOUD-->
+				<!--CLOUD-->
+				<div id="background-wrap">
+					<div class="x1">
+						<div class="cloud1"></div>
+					</div>
+				</div>
+				<div id="background-wrap">
+					<div class="x2">
+						<div class="cloud2"></div>
+					</div>
+				</div>
+				<div id="background-wrap">
+					<div class="x3">
+						<div class="cloud3"></div>
+					</div>
+				</div>
+
+				<!-- plane-->
+				<div class="row rang_avion">
+					<!-- Bouton  modal 1 -->
+
+					<div class="col-1 offset-3 hublot avatar d-none d-sm-none d-md-block">
+						<img class="avatarplane rounded-circle" src="/assets/images/groupe9/bitmoDesk/felix_fa.png" alt="plane" data-toggle="modal" data-target="#felix">
+
+						<!--MODAL Desktop felix -->
+
+						<div class="modal fade" id="felix" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+						 aria-hidden="true">
+
+							<div class="modal-dialog modal-dialog-centered grande" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<div class="row justify-content-center">
+											<div class="col-1">
+												<img class="img-fluid" src="/assets/images/groupe9/plane.png">
+											</div>
+											<div class="col-2 offset-3 btitle">
+												<h4 class="modal-title-fluid" id="exampleModalLongTitle">Air Wild</h4>
+											</div>
+											<div class="col-2 offset-2">
+												<h5 class="modal-title-fluid pass" id="exampleModalLongTitle">Boarding pass</h5>
+											</div>
+											<div class="col-1 offset-1">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="modal-body">
+										<div class="row">
+											<div class="col-1 barcode"></div>
+											<div class="col-8">
+												<div class="row">
+													<div class="col-4" style="border-right: solid 1px; ">
+														<p>Name of passager</p>
+														<h5><strong>Felix Tuffreaud</strong></h5>
+													</div>
+													<div class="col-4" style="border-right: solid 1px; ">
+														<p>Date</p>
+														<h5><strong>16/09/1983</strong></h5>
+													</div>
+													<div class="col-4">
+														<p style="display: inline-block;">From : </p>
+														<h5 style="float: right;  margin-right: 115px;"><strong>Here</strong></h5><br />
+														<p style="display: inline-block;">To : </p>
+														<h5 style="float: right;  margin-right: 115px;"><strong>Space</strong></h5>
+													</div>
+												</div>
+												<div class="paragraph">
+													<h5>"En reconversion professionnelle pour atteindre les étoiles !! Suite à mon dernier emploi au sein d'un
+														site internet e-commerce,
+														je décide de passer en hyper-space. J'intègre la wild code school en septembre 2018, paré au décollage
+														!!"</h5>
+												</div>
+												<div class="row comp">
+													<div class="col-3 tit">
+														<p class="titleM">Luggage :</p>
+														<p>Progression :</p>
+													</div>
+
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>Html</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 100%"
+															 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+													</div>
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>CSS</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%"
+															 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+													</div>
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>PHP</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 60%"
+															 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+													</div>
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>SQL</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 40%"
+															 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+													</div>
+
+
+												</div>
+											</div>
+											<div class="col-3">
+												<div class="row">
+													<!--PHOTO-->
+													<!--PHOTO-->
+													<div class="col-12">
+														<img class="felixprofile img-fluid" src="/assets/images/groupe9/photoMod/felix.jpg">
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer lgfooter">
+										<a target="_blank" href="mailto:felix.tuffreaud@laposte.net"><img class="img-fluid" src="/assets/images/groupe9/mlfull.png"></a>
+										<a target="_blank" href="https://github.com/Liiinx"><img class="img-fluid" src="/assets/images/groupe9/ghbfull.png"></a>
+										<a target="_blank" href="https://www.linkedin.com/in/f%C3%A9lix-tuffreaud-450012170/"> <img class="img-fluid"
+											 src="/assets/images/groupe9/linkedin.png"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Bouton  modal 2 -->
+					<div class="col-1 hublot avatar d-none d-sm-none d-md-block">
+						<img class="avatarplane rounded-circle" src="/assets/images/groupe9/bitmoDesk/ju_fa.png" alt="plane" data-toggle="modal" data-target="#julien">
+
+						<!--MODAL Desktop julien-->
+
+						<div class="modal fade" id="julien" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+						 aria-hidden="true">
+
+							<div class="modal-dialog modal-dialog-centered grande" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<div class="row justify-content-center">
+											<div class="col-1">
+												<img class="img-fluid" src="/assets/images/groupe9/plane.png">
+											</div>
+											<div class="col-2 offset-3 btitle">
+												<h4 class="modal-title-fluid" id="exampleModalLongTitle">Air Wild</h4>
+											</div>
+											<div class="col-2 offset-2">
+												<h5 class="modal-title-fluid pass" id="exampleModalLongTitle">Boarding pass</h5>
+											</div>
+											<div class="col-1 offset-1">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="modal-body">
+										<div class="row">
+											<div class="col-1 barcode"></div>
+											<div class="col-8">
+												<div class="row">
+													<div class="col-4" style="border-right: solid 1px; ">
+														<p>Name of passager</p>
+														<h5><strong>Julien Schader</strong>j</h5>
+													</div>
+													<div class="col-4" style="border-right: solid 1px; ">
+														<p>Date</p>
+														<h5><strong>07/12/1988</strong></h5>
+													</div>
+													<div class="col-4">
+														<p style="display: inline-block;">From : </p>
+														<h5 style="float: right;  margin-right: 115px;"><strong>Alsace</strong></h5><br />
+														<p style="display: inline-block;">To : </p>
+														<h5 style="float: right;  margin-right: 5px;"><strong>Developpeur Web</strong></h5>
+													</div>
+												</div>
+												<div class="paragraph">
+													<h5>"Passionné par l'informatique depuis l'adolescence, après un CAP Cusine et plus de 10 ans de jobs
+														d'intérims j'ai décidé de me lancer
+														dans l'aventure du développement Web, avec comme point de départ la Wild Code School."</h5>
+												</div>
+												<div class="row comp">
+													<div class="col-3 tit">
+														<p>Luggage :</p>
+														<p>Progression :</p>
+													</div>
+
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>Html</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 100%"
+															 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+													</div>
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>CSS</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%"
+															 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+													</div>
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>Java</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 70%"
+															 aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+													</div>
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>Javascript</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 50%"
+															 aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+													</div>
+
+
+												</div>
+											</div>
+											<div class="col-3">
+												<div class="row">
+													<!--PHOTO-->
+													<!--PHOTO-->
+													<div class="col-12">
+														<img class="julienpprofile img-fluid img-thumbnail" src="/assets/images/groupe9/photoMod/julien.jpg">
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer lgfooter">
+										<a target="_blank" href="mailto:julien.schader@laposte.net"><img class="img-fluid" src="/assets/images/groupe9/mlfull.png"></a>
+										<a target="_blank" href="https://github.com/Nameoj"><img class="img-fluid" src="/assets/images/groupe9/ghbfull.png"></a>
+										<a target="_blank" href="https://www.linkedin.com/in/julien-schader/"> <img class="img-fluid" src="/assets/images/groupe9/linkedin.png"></a>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+
+					</div>
+
+					<!-- Bouton  modal 3 -->
+					<div class="col-1 hublot avatar d-none d-sm-none d-md-block">
+						<img class="avatarplane rounded-circle" src="/assets/images/groupe9/bitmoDesk/si_fa.png" alt="plane" data-toggle="modal" data-target="#simon">
+
+						<!--MODAL Desktop simon-->
+
+						<div class="modal fade" id="simon" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+						 aria-hidden="true">
+
+							<div class="modal-dialog modal-dialog-centered grande" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<div class="row justify-content-center">
+											<div class="col-1">
+												<img class="img-fluid" src="/assets/images/groupe9/plane.png">
+											</div>
+											<div class="col-2 offset-3 btitle">
+												<h4 class="modal-title-fluid" id="exampleModalLongTitle">Air Wild</h4>
+											</div>
+											<div class="col-2 offset-2">
+												<h5 class="modal-title-fluid pass" id="exampleModalLongTitle">Boarding pass</h5>
+											</div>
+											<div class="col-1 offset-1">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="modal-body">
+										<div class="row">
+											<div class="col-1 barcode"></div>
+											<div class="col-8">
+												<div class="row">
+													<div class="col-4" style="border-right: solid 1px; ">
+														<p>Name of passager</p>
+														<h5><strong>Simon</strong></h5>
+													</div>
+													<div class="col-4" style="border-right: solid 1px;">
+														<p>Date</p>
+														<h5><strong>26/08/1996</strong></h5>
+													</div>
+													<div class="col-4">
+														<p style="display: inline-block;">From : </p>
+														<h5 style="float: right;  margin-right: 115px;"><strong>Lyon</strong></h5><br />
+														<p style="display: inline-block;">To : </p>
+														<h5 style="float: right;  margin-right: 5px;"><strong>Developpeur Web</strong></h5>
+													</div>
+												</div>
+												<div class="paragraph">
+													<h5>"Commencer le Développement Web en autodidacte est une belle façon de s'initier à la programmation,
+														cette expérience m'a permis de trouver ma vocation. De base je suis très créatif grâce à la
+														musique, c'est donc naturellement que je me dirige dans le Développement Web."</h5>
+												</div>
+												<div class="row comp">
+													<div class="col-3 tit">
+														<p>Luggage :</p>
+														<p>Progression :</p>
+													</div>
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>Html</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 100%"
+															 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+														<!--<img class="etoile1 img-fluid" src="image/etoile.png">
+														<img class="etoile1 img-fluid" src="image/etoile.png">
+														<img class="etoile1 img-fluid" src="image/etoile.png">
+														<img class="etoile1 img-fluid" src="image/etoile.png">-->
+													</div>
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>CSS</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%"
+															 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+														<!--<img class="etoile1 img-fluid" src="image/etoile.png">
+														<img class="etoile1 img-fluid" src="image/etoile.png">
+														<img class="etoile1 img-fluid" src="image/etoile.png">
+														<img class="etoile1 img-fluid" src="image/etoile.png">-->
+													</div>
+
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>Java</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 40%"
+															 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+														<!--<img class="etoile1 img-fluid" src="image/etoile.png">
+														<img class="etoile1 img-fluid" src="image/etoile.png">
+														<img class="etoile1 img-fluid" src="image/etoileW.png">
+														<img class="etoile1 img-fluid" src="image/etoileW.png">-->
+													</div>
+
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>Javascript</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 70%"
+															 aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+														<!--<img class="etoile1 img-fluid" src="image/etoile.png">
+														<img class="etoile1 img-fluid" src="image/etoile.png">
+														<img class="etoile1 img-fluid" src="image/etoile.png">
+														<img class="etoile1 img-fluid" src="image/etoileW.png">-->
+													</div>
+
+
+												</div>
+											</div>
+											<div class="col-3">
+												<div class="row">
+													<!--PHOTO-->
+													<!--PHOTO-->
+													<div class="col-12">
+														<img class="simonprofile img-fluid img-thumbnail" src="/assets/images/groupe9/photoMod/simon.jpg">
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer lgfooter">
+										<a target="_blank" href="mailto:vancoilliesn@gmail.com"><img class="img-fluid" src="/assets/images/groupe9/mlfull.png"></a>
+										<a target="_blank" href="https://github.com/Simonakava"><img class="img-fluid" src="/assets/images/groupe9/ghbfull.png"></a>
+										<a target="_blank" href="https://www.linkedin.com/in/simon-vancoillie/"> <img class="img-fluid" src="/assets/images/groupe9/linkedin.png"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Bouton  modal 4 -->
+					<div class="col-1 hublot avatar d-none d-sm-none d-md-block">
+						<img class="avatarplane rounded-circle" src="/assets/images/groupe9/bitmoDesk/ty_fa.png" alt="plane" data-toggle="modal" data-target="#thierry">
+
+						<!--MODAL Desktop thierry-->
+
+						<div class="modal fade" id="thierry" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+						 aria-hidden="true">
+
+							<div class="modal-dialog modal-dialog-centered grande" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<div class="row justify-content-center">
+											<div class="col-1">
+												<img class="img-fluid" src="/assets/images/groupe9/plane.png">
+											</div>
+											<div class="col-2 offset-3 btitle">
+												<h4 class="modal-title-fluid" id="exampleModalLongTitle">Air Wild</h4>
+											</div>
+											<div class="col-2 offset-2">
+												<h5 class="modal-title-fluid pass" id="exampleModalLongTitle">Boarding pass</h5>
+											</div>
+											<div class="col-1 offset-1">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="modal-body">
+										<div class="row">
+											<div class="col-1 barcode"></div>
+											<div class="col-8">
+												<div class="row">
+													<div class="col-4" style="border-right: solid 1px; ">
+														<p>Name of passager</p>
+														<h5><strong>Thierry Salvan</strong></h5>
+													</div>
+													<div class="col-4" style="border-right: solid 1px; ">
+														<p>Date</p>
+														<h5><strong>19/06/1974</strong></h5>
+													</div>
+													<div class="col-4">
+														<p style="display: inline-block;">From : </p>
+														<h5 style="float: right;  margin-right: 115px;"><strong>Lyon</strong></h5><br />
+														<p style="display: inline-block;">To : </p>
+														<h5 style="float: right;  margin-right: 5px;"><strong>Developpeur PHP</strong></h5>
+													</div>
+												</div>
+												<div class="paragraph">
+													<h5>"Actuellement dans l’aventure pour devenir developer php junior, je suis une personne autodidacte
+														ayant toujours assuré les tâches confiées, avec professionnalisme et efficacité. J’ai toujours démontré
+														un dévouement pour le travail à faire,
+														sans compter le temps et les efforts nécessaire. Je suis très polyvalent, autonome, m’adapte facilement.
+														"</h5>
+												</div>
+												<div class="row comp">
+													<div class="col-2 tit">
+														<p>Luggage :</p>
+														<p>Progression :</p>
+													</div>
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>Html</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 100%"
+															 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+													</div>
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>CSS</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%"
+															 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+													</div>
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>PHP</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 70%"
+															 aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+													</div>
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>MySql</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 70%"
+															 aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+													</div>
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>Photoshop</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 70%"
+															 aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+													</div>
+
+
+												</div>
+											</div>
+											<div class="col-3">
+												<div class="row">
+													<!--PHOTO-->
+													<!--PHOTO-->
+													<div class="col-12">
+														<img class="thierryprofile img-fluid img-thumbnail" src="/assets/images/groupe9/photoMod/thierry.jpg">
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer lgfooter">
+										<a target="_blank" href="https://www.laposte.net/accueil"><img class="img-fluid" src="/assets/images/groupe9/mlfull.png"></a>
+										<a target="_blank" href="https://github.com/"><img class="img-fluid" src="/assets/images/groupe9/ghbfull.png"></a>
+										<a target="_blank" href="https://fr.linkedin.com/"> <img class="img-fluid" src="/assets/images/groupe9/linkedin.png"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Bouton  modal 5 -->
+					<div class="col-1 hublot avatar d-none d-sm-none d-md-block">
+						<img class="avatarplane rounded-circle" src="/assets/images/groupe9/bitmoDesk/jer_fa.png" alt="plane" data-toggle="modal" data-target="#jersy">
+
+						<!--MODAL Desktop jersy-->
+
+						<div class="modal fade" id="jersy" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+						 aria-hidden="true">
+
+							<div class="modal-dialog modal-dialog-centered grande" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<div class="row justify-content-center">
+											<div class="col-1">
+												<img class="img-fluid" src="/assets/images/groupe9/plane.png">
+											</div>
+											<div class="col-2 offset-3 btitle">
+												<h4 class="modal-title-fluid" id="exampleModalLongTitle">Air Wild</h4>
+											</div>
+											<div class="col-2 offset-2">
+												<h5 class="modal-title-fluid pass" id="exampleModalLongTitle">Boarding pass</h5>
+											</div>
+											<div class="col-1 offset-1">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="modal-body">
+										<div class="row">
+											<div class="col-1 barcode"></div>
+											<div class="col-8">
+												<div class="row">
+													<div class="col-4" style="border-right: solid 1px; ">
+														<p>Name of passager</p>
+														<h5><strong>Jerzy Yengo</strong></h5>
+													</div>
+													<div class="col-4" style="border-right: solid 1px; ">
+														<p>Date</p>
+														<h5><strong>16/04/1991</strong></h5>
+													</div>
+													<div class="col-4">
+														<p style="display: inline-block;">From : </p>
+														<h5 style="float: right;  margin-right: 115px;"><strong>Lyon</strong></h5><br />
+														<p style="display: inline-block;">To : </p>
+														<h5 style="float: right;  margin-right: 5px;"><strong>Developpeur Web</strong></h5>
+													</div>
+												</div>
+												<div class="paragraph">
+													<p>Martinus agens illas provincias pro praefectis aerumnas innocentium graviter gemens saepeque obsecrans,
+														ut ab omni culpa inmunibus parceretur, cum non inpetraret, minabatur se discessurum: ut saltem id metuens
+														perquisitor malivolus tandem desineret quieti coalitos homines in aperta pericula proiectare.</p>
+												</div>
+												<div class="row comp">
+													<div class="col-3 tit">
+														<p>Luggage :</p>
+														<p>Progression :</p>
+													</div>
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>Html</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 100%"
+															 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+													</div>
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>CSS</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%"
+															 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+													</div>
+
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>Javascript</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 70%"
+															 aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+											<div class="col-3">
+												<div class="row">
+													<!--PHOTO-->
+													<!--PHOTO-->
+													<div class="col-12">
+														<img class="jersyprofile img-fluid img-thumbnail" src="/assets/images/groupe9/photoMod/jersy.jpg">
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer lgfooter">
+										<a target="_blank" href="mailto:jerzy@gmail.com"><img class="img-fluid" src="/assets/images/groupe9/mlfull.png"></a>
+										<a target="_blank" href="https://github.com/jerzyyy"><img class="img-fluid" src="/assets/images/groupe9/ghbfull.png"></a>
+										<a target="_blank" href="https://www.linkedin.com/in/yengo-jerzy-735912134/"> <img class="img-fluid" src="/assets/images/groupe9/linkedin.png"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Bouton  modal 6 -->
+					<div class="col-1 hublot avatar d-none d-sm-none d-md-block">
+						<img class="avatarplane rounded-circle" src="/assets/images/groupe9/bitmoDesk/mo_fa.png" alt="plane" data-toggle="modal" data-target="#monica">
+
+						<!--MODAL Desktop Monica-->
+
+						<div class="modal fade" id="monica" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+						 aria-hidden="true">
+
+							<div class="modal-dialog modal-dialog-centered grande" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<div class="row justify-content-center">
+											<div class="col-1">
+												<img class="img-fluid" src="/assets/images/groupe9/plane.png">
+											</div>
+											<div class="col-2 offset-3 btitle">
+												<h4 class="modal-title-fluid" id="exampleModalLongTitle">Air Wild</h4>
+											</div>
+											<div class="col-2 offset-2">
+												<h5 class="modal-title-fluid pass" id="exampleModalLongTitle">Boarding pass</h5>
+											</div>
+											<div class="col-1 offset-1">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="modal-body">
+										<div class="row">
+											<div class="col-1 barcode"></div>
+											<div class="col-8">
+												<div class="row">
+													<div class="col-4" style="border-right: solid 1px; ">
+														<p>Name of passager</p>
+														<h5><strong>Monica Wargas</strong></h5>
+													</div>
+													<div class="col-3" style="border-right: solid 1px; ">
+														<p>Date</p>
+														<h5><strong>06/09/1978</strong></h5>
+													</div>
+													<div class="col-4">
+														<p style="display: inline-block;">From : </p>
+														<h5 style="float: right;  margin-right: 115px;"><strong>Lyon</strong></h5><br />
+														<p style="display: inline-block;">To : </p>
+														<h5 style="float: right;  margin-right: 5px;"><strong>Developpeur Web</strong></h5>
+													</div>
+												</div>
+												<div class="paragraph">
+													<p>"Je suis née au Mexique et ça fait 15 ans que j’habite en France.
+														Je suis une femme passionnée et motivée par les difficultées et les challenges.
+														J’aime l’aventure, les voyages et surtout la diversitée culturelle.
+														Pharmacienne et chimiste de formation, je me suis découverte une nouvelle passion...le code !
+														J’entame une nouvelle aventure dans ma vie professionnelle….le développement web a la Wild !"</p>
+												</div>
+												<div class="row comp">
+													<div class="col-3 tit">
+														<p>Luggage :</p>
+														<p>Progression :</p>
+													</div>
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>Html</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 100%"
+															 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+													</div>
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>CSS</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%"
+															 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+													</div>
+
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>Javascript</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 70%"
+															 aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+													</div>
+
+													<div class="col-2">
+														<h5 style="padding-bottom: 10px;"><strong>React</strong></h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 50%"
+															 aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+											<div class="col-3">
+												<div class="row">
+													<!--PHOTO-->
+													<!--PHOTO-->
+													<div class="col-12">
+														<img class="monicapprofile img-fluid img-thumbnail" src="/assets/images/groupe9/photoMod/monica.jpg">
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer lgfooter">
+										<a target="_blank" href="https://www.laposte.net/accueil"><img class="img-fluid" src="/assets/images/groupe9/mlfull.png"></a>
+										<a target="_blank" href="https://github.com/"><img class="img-fluid" src="/assets/images/groupe9/ghbfull.png"></a>
+										<a target="_blank" href="https://fr.linkedin.com/"> <img class="img-fluid" src="/assets/images/groupe9/linkedin.png"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+
+	<!--TERRA-->
+	<!--TERRA-->
+	<div class="row terre d-md-block">
+
+		<div class="col-12">
+			<img class="terra img-fluid" src="/assets/images/groupe9/terre.png" alt="terre">
+			<!--<div class="terra img-fluid"></div>-->
+		</div>
+	</div>
+
+
+	<!-- AVATAR MODAL MOBILE  -->
+
+	<div class="row rowb">
+		<div class="col-2 felix">
+
+			<!-- bouton modal xs felix   -->
+
+			<img class="avatarext img-fluid avatarsmart" src="/assets/images/groupe9/bitmoXS/felix_bo.png" alt="Card image cap" data-toggle="modal"
+			 data-target="#felixXS">
+			<div class="modal fade modal-sm-up" id="felixXS" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+			 aria-hidden="true">
+
+				<!--  modal xs felix   -->
+
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Boarding pass :</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="row justify-content-center">
+								<div class="col-6">
+									<p>Name of passenger</p>
+									<h5><strong>Félix Tuffreaud</strong></h5>
+									<h5><strong>16/09/1983</strong></h5>
+									<p>From:  Here</p>
+									<P>To: Space</P>
+
+								</div>
+								<div class="col-6">
+									<img class="felixSmart img-fluid" src="/assets/images/groupe9/photoMod/felix.jpg">
+								</div> 
+							</div>
+							<p>En reconversion professionnelle pour atteindre les étoiles !!  Suite à mon dernier emploi au sein d'un site internet e-commerce, je décide de passer en hyper-space. J'intègre la wild code school en septembre 2018, parré au décollage !!
+							</p>
+
+							<h5 class="titMod">Luggages</h5>
+							<div class="row">
+								<div class="col-4 offset-1">
+									<p>Html</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+										 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+
+										</div>
+									</div>
+
+								</div>
+
+								<div class="col-4 offset-2">
+									<p>CSS</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated" role="progressbar"
+										 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="row titXS">
+								<div class="col-4 offset-1">
+									<p>PHP</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+										 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+
+										</div>
+									</div>
+
+								</div>
+
+								<div class="col-4 offset-2">
+									<p>Sql</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+										 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+
+
+
+
+						</div>
+						<div class="modal-footer">
+							<div class="row">
+								<div class="col-2 offset-6">
+									<a target="_blank" href="mailto:felix.tuffreaud@laposte.net"><img class="img-fluid" src="/assets/images/groupe9/mlfull.png"></a>
+								</div>
+								<div class="col-2">
+									<a target="_blank" href="https://github.com/Liiinx"><img class="img-fluid" src="/assets/images/groupe9/ghbfull.png"></a>
+								</div>
+								<div class="col-2">
+									<a target="_blank" href="https://www.linkedin.com/in/f%C3%A9lix-tuffreaud-450012170/"> <img class="img-fluid" src="/assets/images/groupe9/linkedin.png"></a>
+								</div>
+							</div>
+						</div>
+						<div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- profil 2-->
+		<div class="col-2 julien">
+
+
+			<!-- bouton modal xs julien   -->
+			<img class="avatarmid img-fluid avatarsmart" src="/assets/images/groupe9/bitmoXS/ju_bo.png" alt="Card image cap" data-toggle="modal"
+			 data-target="#julienXS">
+			<div class="modal fade modal-sm-up" id="julienXS" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+			 aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Boarding pass :</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="row justify-content-center">
+								<div class="col-6">
+									<h5>Name of passenger</h5>
+									<h5><strong>Julien Schader</strong></h5>
+									<h5><strong>07/12/1988</strong></h5>
+									<p>From: Alsace</p>
+									<P>To: Developpeur Web</P>
+
+								</div>
+								<div class="col-6">
+									<img class="img-fluid" src="/assets/images/groupe9/photoMod/julien.jpg">
+
+								</div>
+							</div>
+							<p>Passionné par l'informatique depuis l'adolescence, après un CAP Cusine et plus de 10 ans de jobs d'intérims j'ai décidé de me lancer dans l'aventure du développement Web, avec comme point de départ la Wild Code School.
+							</p>
+
+							<h5 class="titMod">Luggages</h5>
+							<div class="row">
+								<div class="col-4 offset-1">
+									<p>Html</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+										 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+
+										</div>
+									</div>
+
+								</div>
+
+								<div class="col-4 offset-2">
+									<p>CSS</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated" role="progressbar"
+										 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="row titXS">
+								<div class="col-4 offset-1">
+									<p>Java</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+										 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+
+										</div>
+									</div>
+
+								</div>
+
+								<div class="col-4 offset-2">
+									<p>JavaScript</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+										 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+						<div class="modal-footer">
+							<div class="row">
+								<div class="col-2 offset-6">
+									<a target="_blank" href="mailto:julien.schader@laposte.net"><img class="img-fluid" src="/assets/images/groupe9/mlfull.png"></a>
+								</div>
+								<div class="col-2">
+									<a target="_blank" href="https://github.com/Nameoj"><img class="img-fluid" src="/assets/images/groupe9/ghbfull.png"></a>
+								</div>
+								<div class="col-2">
+									<a target="_blank" href="https://www.linkedin.com/in/julien-schader/"> <img class="img-fluid" src="/assets/images/groupe9/linkedin.png"></a>
+								</div>
+							</div>
+						</div>
+						<div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- profil 3-->
+		<div class="col-2 simon">
+
+			<!--   bouton modal xs simon   -->
+			<img class="avatarsimon img-fluid avatarsmart" src="/assets/images/groupe9/bitmoXS/si_bo.png" alt="Card image cap" data-toggle="modal"
+			 data-target="#simonXS">
+			<div class="modal fade modal-sm-up" id="simonXS" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+			 aria-hidden="true">
+
+				<!--  modal xs simon   -->
+
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Boarding pass :</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="row justify-content-center">
+								<div class="col-6">
+									<h5>Name of passenger</h5>
+									<h5><strong>Simon Vancoillie</strong></h5>
+									<h5><strong>26/08/1996</strong></h5>
+									<p>From: Lyon</p>
+									<P>To: Developpeur Web</P>
+
+								</div>
+								<div class="col-6">
+									<img class="img-fluid" src="/assets/images/groupe9/photoMod/simon.jpg">
+
+								</div>
+							</div>
+							<p>"Commencer le Développement Web en autodidacte est une belle façon de s'initier à la programmation,
+									cette expérience m'a permis de trouver ma vocation. De base je suis très créatif grâce à la
+									musique, c'est donc naturellement que je me dirige dans le Développement Web."
+
+							</p>
+							<h5 class="titMod">Luggages</h5>
+							<div class="row">
+								<div class="col-4 offset-1">
+									<p>Html</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+										 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+
+										</div>
+									</div>
+
+								</div>
+
+								<div class="col-4 offset-2">
+									<p>CSS</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated" role="progressbar"
+										 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="row titXS">
+								<div class="col-4 offset-1">
+									<p>JavaScript</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+										 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+
+										</div>
+									</div>
+
+								</div>
+
+								<div class="col-4 offset-2">
+									<p>Java</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+										 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<div class="row">
+								<div class="col-2 offset-6">
+									<a target="_blank" href="mailto:vancoilliesn@gmail.com"><img class="img-fluid" src="/assets/images/groupe9/mlfull.png"></a>
+								</div>
+								<div class="col-2">
+									<a target="_blank" href="https://github.com/Simonakava"><img class="img-fluid" src="/assets/images/groupe9/ghbfull.png"></a>
+								</div>
+								<div class="col-2">
+									<a target="_blank" href="https://www.linkedin.com/in/simon-vancoillie/"> <img class="img-fluid" src="/assets/images/groupe9/linkedin.png"></a>
+								</div>
+							</div>
+						</div>
+						<div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<!-- profil 4-->
+		<div class="col-2 thierry">
+
+			<!--   bouton modal xs thierry   -->
+			<img class="avatarthierry img-fluid avatarsmart" src="/assets/images/groupe9/bitmoXS/ti_bo.png" alt="Card image cap" data-toggle="modal"
+			 data-target="#thierryXS">
+			<div class="modal fade modal-sm-up" id="thierryXS" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+			 aria-hidden="true">
+
+				<!--  modal xs thierry   -->
+
+
+				<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLongTitle">Boarding pass :</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div class="row justify-content-center">
+									<div class="col-6">
+										<h5>Name of passenger</h5>
+										<h5><strong>Thierry Salvan</strong></h5>
+										<h5><strong>19/06/1974</strong></h5>
+										<p>From: Lyon</p>
+										<P>To: Developpeur Php</P>
+	
+									</div>
+									<div class="col-6">
+										<img class="img-fluid" src="/assets/images/groupe9/photoMod/thierry.jpg">
+	
+									</div>
+								</div>
+								<p>Actuellement dans l’aventure pour devenir developer php junior, je suis une personne autodidacte ayant toujours assuré les tâches confiées, avec professionnalisme et efficacité. J’ai toujours démontré un dévouement pour le travail à faire, sans compter le temps et les efforts nécessaire.  Je suis très polyvalent, autonome, m’adapte facilement.
+	
+								</p>
+								<h5 class="titMod">Luggages</h5>
+								<div class="row">
+									<div class="col-4 offset-1">
+										<p>Html</p>
+										<div class="progress">
+											<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+											 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+	
+											</div>
+										</div>
+	
+									</div>
+	
+									<div class="col-4 offset-2">
+										<p>CSS</p>
+										<div class="progress">
+											<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated" role="progressbar"
+											 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+	
+											</div>
+	
+										</div>
+									</div>
+								</div>
+								<div class="row titXS">
+									<div class="col-4 offset-1">
+										<p>Photoshop</p>
+										<div class="progress">
+											<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+											 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+	
+											</div>
+										</div>
+	
+									</div>
+	
+									<div class="col-4 offset-2">
+										<p>PHP</p>
+										<div class="progress">
+											<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+											 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+	
+											</div>
+	
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<div class="row">
+									<div class="col-2 offset-6">
+										<a target="_blank" href="mailto:thiery@gmail.com"><img class="img-fluid" src="/assets/images/groupe9/mlfull.png"></a>
+									</div>
+									<div class="col-2">
+										<a target="_blank" href="https://github.com/Isandre47"><img class="img-fluid" src="/assets/images/groupe9/ghbfull.png"></a>
+									</div>
+									<div class="col-2">
+										<a target="_blank" href="https://www.linkedin.com/in/thierry-salvan-56126532/"> <img class="img-fluid" src="/assets/images/groupe9/linkedin.png"></a>
+									</div>
+								</div>
+							</div>
+							<div>
+							</div>
+						</div>
+					</div>
+			</div>
+
+			</div>
+
+		
+		<!-- profil 5-->
+		<div class="col-2 monica">
+
+			<!--   bouton modal xs monica   -->
+			<img class="avatarmid img-fluid avatarsmart" src="/assets/images/groupe9/bitmoXS/mo_bo.png" alt="Card image cap" data-toggle="modal"
+			 data-target="#monicaXS">
+			<div class="modal fade modal-sm-up" id="monicaXS" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+			 aria-hidden="true">
+
+				<!--  modal xs monica   -->
+
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Boarding pass :</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="row justify-content-center">
+								<div class="col-6">
+									<h5>Name of passenger</h5>
+									<h5><strong>Monica Vargas</strong></h5>
+									<h5><strong>06/09/1978</strong></h5>
+									<p>From: Mexico</p>
+									<P>To: Developpeur Web</P>
+
+								</div>
+								<div class="col-6">
+									<img class="img-fluid" src="photoMod/monica.jpg">
+
+								</div>
+							</div>
+							<p>Je suis née au Mexique et ça fait 15 ans que j’habite en France. Je suis une femme passionnée et motivée par les difficultées et les challenges. J’aime l’aventure, les voyages et surtout la diversitée culturelle. Pharmacienne et chimiste de formation, je me suis découverte une nouvelle passion...le code ! J’entame une nouvelle aventure dans ma vie professionnelle….le développement web a la Wild !
+
+							</p>
+							<h5 class="titMod">Luggages</h5>
+							<div class="row">
+								<div class="col-4 offset-1">
+									<p>Html</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+										 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+
+										</div>
+									</div>
+
+								</div>
+
+								<div class="col-4 offset-2">
+									<p>CSS</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated" role="progressbar"
+										 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="row titXS">
+								<div class="col-4 offset-1">
+									<p>JavaScript</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+										 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+
+										</div>
+									</div>
+
+								</div>
+
+								<div class="col-4 offset-2">
+									<p>React</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+										 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+					
+						</div>
+						<div class="modal-footer">
+							<div class="row">
+								<div class="col-2 offset-6">
+									<a target="_blank" href="mailto:monivasa@gmail.com"><img class="img-fluid" src="/assets/images/groupe9/mlfull.png"></a>
+								</div>
+								<div class="col-2">
+									<a target="_blank" href="https://github.com/musatex"><img class="img-fluid" src="/assets/images/groupe9/ghbfull.png"></a>
+								</div>
+								<div class="col-2">
+									<a target="_blank" href="https://www.linkedin.com/in/monica-vargas-34018ba7/"> <img class="img-fluid" src="/assets/images/groupe9/linkedin.png"></a>
+								</div>
+							</div>
+						</div>
+						<div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<!-- profil 6-->
+		<div class="col-2 jersy">
+
+
+			<!--   bouton modal xs jersy   -->
+
+			<img class="avatarext img-fluid avatarsmart" src="/assets/images/groupe9/bitmoXS/jer_bo.png" alt="Card image cap" data-toggle="modal"
+			 data-target="#jersyXS">
+			<div class="modal fade modal-sm-up" id="jersyXS" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+			 aria-hidden="true">
+
+				<!--  modal xs jersy   -->
+
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Boarding pass :</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="row justify-content-center">
+								<div class="col-6">
+									<h5>Name of passenger</h5>
+									<h5><strong>Jerzy Yengo</strong></h5>
+									<h5><strong>09/02/1993</strong></h5>
+									<p>From: France</p>
+									<P>To: United Kingdom</P>
+
+								</div>
+								<div class="col-6">
+									<img class="img-fluid" src="assets/images/groupe9/photoMod/jersy.jpg">
+								</div>
+							</div>
+							<p>Né à Lyon et y résident depuis mon enfance, j'ai toujours été passionné par le sport. Ce dernier m'a appris à avoir, une modivation constante, l'esprit d'équipe ainsi que le dépassement de soi. CoordinateurQualité Sécurité Environnement de formation, le code s'est revélé une passion. De ce fait, j'ai décidé de sauter le pas et je me suis lancer dans l'aventure Wild code School !
+
+
+							</p>
+							<h5 class="titMod">Luggages</h5>
+							<div class="row">
+								<div class="col-4 offset-1">
+									<p>Html</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+										 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+
+										</div>
+									</div>
+
+								</div>
+
+								<div class="col-4 offset-2">
+									<p>CSS</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated" role="progressbar"
+										 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="row titXS">
+								<div class="col-4 offset-1">
+									<p>JavaScript</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+										 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+
+										</div>
+									</div>
+
+								</div>
+
+								<div class="col-4 offset-2">
+									<p>React</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+										 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+					
+						</div>
+						<div class="modal-footer">
+							<div class="row">
+								<div class="col-2 offset-6">
+									<a target="_blank" href="mailto:jerzy@gmail.com"><img class="img-fluid" src="/assets/images/groupe9/mlfull.png"></a>
+								</div>
+								<div class="col-2">
+									<a target="_blank" href="https://github.com/jerzyyy"><img class="img-fluid" src="/assets/images/groupe9/ghbfull.png"></a>
+								</div>
+								<div class="col-2">
+									<a target="_blank" href="https://www.linkedin.com/in/yengo-jerzy-735912134//"> <img class="img-fluid" src="/assets/images/groupe9/linkedin.png"></a>
+								</div>
+							</div>
+						</div>
+						<div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	 crossorigin="anonymous"></script>
+</body>
+
+</html>

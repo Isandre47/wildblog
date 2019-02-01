@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One|Shrikhand&subset=gujarati,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700');
+/*body start*/
+*
+{
+	box-sizing: border-box;
+}
+body
+{
+  background-color:#7FCADA;
+  overflow-x: hidden;
+  /*rajoutSim*/
+  height: 100vh;
+	margin: 0;
+  padding: 0;
+  
+  /*rajoutSim*/
+}
+.container-fluid
+{
+	padding: 0;
+}
+/*body start*/
+.navbar-brand {
+    padding-left: 20px;
+}
+/*container start*/
+h1
+{
+  word-wrap: break-word;
+  font-family: 'Shrikhand', cursive;
+	/*font-family: 'Josefin Sans', sans-serif;*/
+	text-align: center;
+	margin-top: 2vw;
+  /*font-size: 6rem;*/
+  font-size: 7vw;
+  /*color: #FFC34A;*/
+  color: #FF9F1C;
+  text-shadow: 3px 3px 0 #0199d9 , 4px 4px 0 #0199d9 , 5px 5px 0 #0199d9 , 6px 6px 0 #0199d9 , 7px 7px 0 #0199d9 , 8px 8px 0 #0199d9 , 9px 9px 0 #0199d9 , 10px 10px 0 #0199d9 , 11px 11px 0 #0199d9 , 12px 12px 0 #0199d9 , 13px 13px 0 #0199d9 , 14px 14px 0 #0199d9 , 15px 15px 0 #0199d9 , 16px 16px 0 #0199d9 , 17px 17px 0 #0199d9 , 18px 18px 0 #0199d9 , 19px 19px 0 #0199d9 , 20px 20px 0 #0199d9 ;
+}
+
+h4{
+  color: #FDFFFC;
+  /*color: #0199d9;*/
+  /*color: #2EC4B6;*/
+  font-family: 'Shrikhand', cursive;
+}
+
+h4, .btitle{
+  width: 25vw;
+  font-size: 180%;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.ima .container{
+   overflow:hidden;
+    border: solid;
+    background-color:#b4ddf0;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+
+#background-wrap {
+  bottom: 0;
+left: 0;
+padding-top: 50px;
+position: fixed;
+right: 0;
+top: 0;
+z-index: -1;
+}
+
+
+@-webkit-keyframes animateCloud {
+  0% {
+      margin-left: -1000px;
+  }
+  100% {
+      margin-left: 100%;
+  }
+}
+
+@-moz-keyframes animateCloud {
+  0% {
+      margin-left: -1000px;
+  }
+  100% {
+      margin-left: 100%;
+  }
+}
+
+@keyframes animateCloud {
+  100% {
+      margin-left: -1000px;
+  }
+  0% {
+      margin-left: 100%;
+  }
+}
+
+/* ANIMATIONS */
+
+.x1 {
+-webkit-animation: animateCloud 15s linear infinite;
+-moz-animation: animateCloud 15s linear infinite;
+animation: animateCloud 15s linear infinite;
+
+-webkit-transform: scale(0.65);
+-moz-transform: scale(0.65);
+transform: scale(0.65);
+}
+.x2 {
+  -webkit-animation: animateCloud 12s linear infinite;
+  -moz-animation: animateCloud 12s linear infinite;
+  animation: animateCloud 12s linear infinite;
+
+  -webkit-transform: scale(0.65);
+  -moz-transform: scale(0.65);
+  transform: scale(0.65);
+  }
+  .x3 {
+    -webkit-animation: animateCloud 11s linear infinite;
+    -moz-animation: animateCloud 11s linear infinite;
+    animation: animateCloud 11s linear infinite;
+
+    -webkit-transform: scale(0.65);
+    -moz-transform: scale(0.65);
+    transform: scale(0.65);
+    }
+
+.cloud1 {
+	background-size:cover;
+	background-image: url('/assets/images/groupe9/n3.png');
+	background-repeat: no-repeat;
+  /*height: 520px;*/
+  top: 20vw;
+  width: 27vw;
+  height: 27vw;
+  position: absolute;
+  /*min-width: 50%;*/
+
+
+}
+
+.cloud2 {
+	background-size:cover;
+	background-image: url('/assets/images/groupe9/n3.png');
+	background-repeat: no-repeat;
+  /*height: 520px;*/
+  margin-top: 0%;
+  width: 20vw;
+  height: 20vw;
+	position: absolute;
+	/*min-width: 50%;*/
+}
+.cloud3 {
+	background-size:cover;
+	background-image: url('/assets/images/groupe9/n3.png');
+	background-repeat: no-repeat;
+  /*height: 520px;*/
+  top: 15vw;
+  width: 20vw;
+  height: 20vw;
+	position: absolute;
+	/*min-width: 50%;*/
+}
+.world_alone
+{
+  text-align: center;
+}
+.rang_avion{
+    background-image: url("/assets/images/groupe9/PlaneAirWild.png");
+    background-position: center;
+    height: 70vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    animation: mymove 5s;           /* animation translation */
+    animation-timing-function: linear;
+    position: relative;
+
+/*   justify-content: center; */
+
+}
+
+.avatarplane {
+    max-width: 100%;
+    box-shadow: black;
+
+}
+
+
+/*container end*/
+
+.row
+{
+	padding: 1px;
+}
+.container_footer a:hover
+{
+	text-decoration: none;
+	color: #85D6F3;
+
+}
+.col-sm-2
+{
+	padding-left: 45px;
+}
+.col-sm
+{
+	text-align: right;
+	padding-right: 60px;
+}
+
+.avatarplane {
+		position: relative;
+		left: 10%;
+}
+.avatar {
+  position: relative;
+}
+.avatar1:hover {
+    animation: bounce 1s;
+}
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+.titXS {
+  text-align: center;
+  margin-top: 20px;
+}
+.titHT {
+  padding-top: 5px;
+}
+.titMod {
+  text-align: center;
+}
+
+
+.grande{
+    max-width: 1200px;
+   
+}
+.modal-header {
+  display: inline-block;
+  /*background-color: #F7E2C3;*/
+  /*background-color: #048A81;*/
+  /*background-color: #FF9F1C;*/
+  background-color: #EF4744;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+}
+.modal-content {
+  border-radius: 2em;
+}
+.modal-footer {
+  /*background-color: #F7E2C3;*/
+  /*background-color: #048A81;*/
+ /* background-color: #FF9F1C;*/
+  background-color: #EF4744;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+.etoile1 {
+	height: 20px;
+	width: 20px;
+}
+.tit h5 {
+	text-align: center;
+}
+.comp p {
+	text-align: center;
+}
+.comp {
+	padding-top: 30px;
+}
+.lgfooter img {
+	height: 60px;
+	width: 60px;
+}
+.xsfooter img {
+	height: 40px;
+	width: 40px;
+}
+
+.barcode {
+  background: url(/assets/images/groupe9/barcode1.gif);
+}
+.paragraph {
+  margin-top: 50px;
+}
+.pass h5 {
+  font-size: 20px;
+}
+
+.terre {
+    overflow:hidden;
+    position: fixed;
+    z-index: -1;
+    bottom: -60vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    left: 3vh;
+
+  }
+.terra {
+  display: block;
+  z-index: -1;
+  bottom: -50vw;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  bottom: 0vh;
+  width: 90%;
+}
+
+
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(360deg);
+    }
+    to{
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+.terra {
+    -webkit-animation: rotating 60s linear infinite;
+}
+
+
+.rowb img{
+width: 80%;
+}
+
+/* ajout et modification des règles bootstrap pour les "cards" bootstrap, au delà
+de 768px pour le cacher et moins de 768px pour l'afficher */
+
+
+
+@media (min-width: 769px){
+.rowb{
+  display: none;
+}
+}
+
+.avatarext {
+  padding-top: 60px;
+}
+.avatarmid {
+  padding-top: 30px;
+}
+.rowb .col-2 {
+  padding: 0;
+}
+.rowb {
+  margin-left: 15px;
+}
+.felixprofile {
+    padding: 5px;
+    border: solid 1px #EFEFEF;
+}
+.felixprofile:hover {
+    border: solid 1px #CCC;
+    -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+        box-shadow: 1px 1px 5px #999;
+}
+
+.avatarplane:hover {
+    border: solid 1px #CCC;
+    -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+        box-shadow: 1px 1px 5px #999;
+}
+
+.etoilexs {
+	height: 2px;
+	width: 2px;
+}

@@ -1,0 +1,25 @@
+{% extends "admin_layout.html.twig" %}
+
+{% block headeradmin %}
+    <h1>
+        {{ user.nom }}
+    </h1>
+{% endblock %}
+
+{% block navadmin %}
+    <h1> Menu admin</h1>
+    <ul>
+        <li>Utilisateurs</li>
+        <li>Articles</li>
+        <li>Commentaires</li>
+    </ul>
+{% endblock %}
+
+{% block content %}
+    <h1>Ajouter un nouveau article</h1>
+    {% include '_form.html.twig' %}
+{% endblock %}
+
+
+
+
