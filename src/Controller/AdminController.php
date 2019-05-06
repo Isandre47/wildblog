@@ -1,6 +1,7 @@
 <?php
 namespace Controller;
 
+use function Couchbase\defaultDecoder;
 use http\Env\Request;
 use Model\ArticleManager;
 use Model\Article;
@@ -34,14 +35,24 @@ class AdminController extends AbstractController
         $numberComments = $countComment->count();
         $lastComments = new AdminCommentManager($this->getPdo());       // idem pour les commentaires
         $lastComments = $lastComments->selectCommentsForIndex();
+        $viewSignal =  $countComment->viewSignal();
         if (isset($_SESSION['admin']) && isset($_SESSION['admin']['message'])) {
             $connexionMessage = $_SESSION['admin']['message'];
             unset($_SESSION['admin']['message']);
         };
-        return $this->twig->render('Admin/admin_dashboard.html.twig', ["active" => $article, "user" => $_SESSION['admin'],
-            'totalArticles' => $numberArticles, 'totalUsers' => $numberUsers, 'totalComments' => $numberComments,
-            "session" => $_SESSION, 'connexionMessage' => $connexionMessage, 'isLogged' => $this->isLoggedAdmin(),
-            'lastarticles' => $lastArticles, 'lastusers' => $lastUsers, 'lastcomments' => $lastComments,
+        return $this->twig->render('Admin/admin_dashboard.html.twig', [
+            "active" => $article,
+            "user" => $_SESSION['admin'],
+            'totalArticles' => $numberArticles,
+            'totalUsers' => $numberUsers,
+            'totalComments' => $numberComments,
+            'viewsignal' => $viewSignal,
+            "session" => $_SESSION,
+            'connexionMessage' => $connexionMessage,
+            'isLogged' => $this->isLoggedAdmin(),
+            'lastarticles' => $lastArticles,
+            'lastusers' => $lastUsers,
+            'lastcomments' => $lastComments,
         ]);
     }
 

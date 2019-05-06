@@ -75,5 +75,12 @@ class AdminCommentManager extends AbstractManager
         $this->pdo->query("SET lc_time_names = 'fr_FR'");
         return $this->pdo->query('SELECT comment.id, DATE_FORMAT(comment.date, "%e %M %Y à %Hh %i") AS date, comment.content, comment.user_id, comment.article_id, user.firstname AS userFirstname, user.lastname AS userLastname, article.title AS articleTitle FROM comment INNER JOIN user ON user.id=comment.user_id INNER JOIN article ON article.id=comment.article_id ORDER BY date DESC LIMIT 3', \PDO::FETCH_CLASS, $this->className)->fetchAll();
     }
+
+    public function viewSignal()
+    {
+        $numbersSignal = $this->pdo->query("SELECT COUNT(signaler) AS Numbers FROM $this->table WHERE signaler !=0")->fetchColumn();
+//        var_dump($numbersSignal); die;
+        return $numbersSignal;
+    }
 }
 
