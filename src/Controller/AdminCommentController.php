@@ -31,8 +31,13 @@ class AdminCommentController extends AbstractController
     {
         $commentsManager = new AdminCommentManager($this->getPdo());
         $comments = $commentsManager->selectAllComments();
+        $signals = $commentsManager->countSignal();
         $active = "comments";
-        return $this->twig->render('Admin/AdminComment/indexAdminComment.html.twig', ['comments' => $comments, "active" => $active] );
+        return $this->twig->render('Admin/AdminComment/indexAdminComment.html.twig', [
+            'comments' => $comments,
+            "signals" => $signals,
+            "active" => $active
+        ]);
     }
 
 //    Index de tout les commentaires signalés
@@ -40,7 +45,11 @@ class AdminCommentController extends AbstractController
     {
         $commentsSignals = new AdminCommentManager($this->getPdo());
         $shows = $commentsSignals->showSignal();
-        return $this->twig->render('Admin/AdminComment/showCommentSignal.html.twig', ['comments' => $shows]);
+        $count = $commentsSignals->countSignal();
+        return $this->twig->render('Admin/AdminComment/showCommentSignal.html.twig', [
+            'comments' => $shows,
+            "signals" => $count,
+        ]);
     }
 
 //  Aucun changement ici, la méthode reste la même que le commentaire soit signalé ou pas
