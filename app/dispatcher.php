@@ -46,7 +46,7 @@ switch ($routeInfo[0]) {
         $vars = $routeInfo[2];
         [$class, $method] = $routeInfo[1];
         $class = APP_CONTROLLER_NAMESPACE . $class . APP_CONTROLLER_SUFFIX;
-        echo 'toto';
+//        echo 'toto';
         echo call_user_func_array([new $class(), $method], $vars);
         break;
 }

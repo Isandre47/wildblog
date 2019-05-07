@@ -75,5 +75,36 @@ class AdminCommentManager extends AbstractManager
         $this->pdo->query("SET lc_time_names = 'fr_FR'");
         return $this->pdo->query('SELECT comment.id, DATE_FORMAT(comment.date, "%e %M %Y à %Hh %i") AS date, comment.content, comment.user_id, comment.article_id, user.firstname AS userFirstname, user.lastname AS userLastname, article.title AS articleTitle FROM comment INNER JOIN user ON user.id=comment.user_id INNER JOIN article ON article.id=comment.article_id ORDER BY date DESC LIMIT 3', \PDO::FETCH_CLASS, $this->className)->fetchAll();
     }
+
+//    Permet de ne prendre en compte que les commentaires signalés, prise en compte d'un flag signal dans la table comment
+    public function countSignal()
+    {
+        $signals = $this->pdo->query("SELECT COUNT(signale) AS Signals FROM $this->table  WHERE signale !=0 ")->fetchColumn();
+        return $signals;
+    }
+
+//    Sélection de tout les commentaires signalés
+    public function showSignal()
+    {
+        return $this->pdo->query('SELECT comment.id, comment.signale, DATE_FORMAT(comment.date, "%e %M %Y à %Hh %i") AS date, comment.content, comment.user_id, comment.article_id, user.firstname AS userFirstname, user.lastname, article.title FROM comment INNER JOIN user ON user.id=comment.user_id INNER JOIN article ON article.id=comment.article_id WHERE comment.signale != 0 ORDER BY date DESC', \PDO::FETCH_CLASS, $this->className)->fetchAll();
+    }
+
+//    Ajout d'un signalement avec increment si le commentaire a déjà été signalé
+    public function addSignal(int $id)
+    {
+        $statement = $this->pdo->prepare("UPDATE $this->table SET signale = signale+1 WHERE id=:id");
+        $statement->bindValue('id', $id, \PDO::PARAM_INT);
+        $statement->execute();
+        return header('Location: ' . $_SERVER['HTTP_REFERER']);
+    }
+
+//    Reset un signalement
+    public function resetSignal(int $id)
+    {
+        $statement = $this->pdo->prepare("UPDATE $this->table SET signale = 0 WHERE id=:id");
+        $statement->bindValue('id', $id, \PDO::PARAM_INT);
+        $statement->execute();
+        return header('Location: ' . $_SERVER['HTTP_REFERER']);
+    }
 }
 

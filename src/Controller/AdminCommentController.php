@@ -25,7 +25,6 @@ class AdminCommentController extends AbstractController
             return $this->twig->render('Article/logToComment.html.twig', ['errorConnexion' => $errorConnexion, 'return' => $return]);
             // TODO redirection on last visited page after connexion
         }
-
     }
 
     public function indexAdminComments()
@@ -36,12 +35,33 @@ class AdminCommentController extends AbstractController
         return $this->twig->render('Admin/AdminComment/indexAdminComment.html.twig', ['comments' => $comments, "active" => $active] );
     }
 
+//    Index de tout les commentaires signalés
+    public function indexAdminCommentsSignals()
+    {
+        $commentsSignals = new AdminCommentManager($this->getPdo());
+        $shows = $commentsSignals->showSignal();
+        return $this->twig->render('Admin/AdminComment/showCommentSignal.html.twig', ['comments' => $shows]);
+    }
+
+//  Aucun changement ici, la méthode reste la même que le commentaire soit signalé ou pas
     public function delete(int $id)
     {
         $commentManager = new AdminCommentManager($this->getPdo());
         $commentManager->delete($id);
-
     }
 
+//  Pour ajouter un signalement à un commentaire précis, il est incrémentiel
+    public function addCommentSignal($id)
+    {
+        $commentSignal = new AdminCommentManager($this->getPdo());
+        $commentSignal->addSignal($id);
+    }
+
+//  Reset les signalements dans le cas ou cela n'est pas justifié
+    public function resetSignal($id)
+    {
+        $commentSignal = new AdminCommentManager($this->getPdo());
+        $commentSignal->resetSignal($id);
+    }
 
 }

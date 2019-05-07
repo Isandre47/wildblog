@@ -10,6 +10,23 @@ class Comment
     protected $content;
     protected $user_id;
     protected $article_id;
+    protected $signale;
+
+    /**
+     * @return mixed
+     */
+    public function getSignale()
+    {
+        return $this->signale;
+    }
+
+    /**
+     * @param mixed $signale
+     */
+    public function setSignale($signale)
+    {
+        $this->signale = $signale;
+    }
 
     /**
      * @return mixed

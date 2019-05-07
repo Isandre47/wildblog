@@ -99,7 +99,12 @@
                         <a href="/admin/comments" class="text-white">Nombre total de commentaires</a>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title dashboardCount text-white">{{ totalComments }}</h5>
+                        <h5 class="card-title dashboardCount text-white">{{ totalComments }} dont</h5>
+                        {% if signals == 0 %}
+                        <h5 class="card-title dashboardCount text-white"><a href="/admin/comments/signals"> aucun signalé, super :)</a></h5>
+                        {% else %}
+                        <h5 class="card-title dashboardCount text-white"><a href="/admin/comments/signals">{{ signals }} signalé(s)</a></h5>
+                        {% endif %}
                     </div>
                 </div>
             </div>
