@@ -20,7 +20,6 @@ $routes = [
         ['indexAdmin', '/admin/articles', 'GET'], //show index for admin
         ['logAdmin', '/admin/logAdmin', ['GET', 'POST']],
         ['logout', '/admin/logout', 'GET'],//logout
-
         ['userShow', '/admin/user/{id:\d+}', 'GET'],
         ['usersIndex', '/admin/users', 'GET'],
         ['userDelete', '/admin/user/delete/{id:\d+}', 'GET'],
@@ -29,11 +28,13 @@ $routes = [
     'AdminComment' => [
         ['delete', '/admin/comment/delete/{id:\d+}', 'GET'],//add comment by user
         ['add', '/article/{id:\d+}/comment', 'POST'],    //add comment by user
+        ['resetSignal', '/admin/comment/reset/{id:\d+}', 'GET'],    //add comment by user
+        ['addCommentSignal', '/article/comment/signal/{id:\d+}', 'GET'],    //add comment signal by user
         ['indexAdminComments', '/admin/comments', 'GET'], //show index comment for admin
+        ['indexAdminCommentsSignals', '/admin/comments/signals', 'GET'], //show index comment for admin
     ],
 
     'User' => [
-
         ['suscribeUser', '/register', ['GET','POST']], // Register page
         ['logUser', '/login', ['GET','POST']], //  Login page
         ['addUser', '/admin/user/createUser', ['GET', 'POST']],

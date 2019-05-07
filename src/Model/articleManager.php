@@ -23,7 +23,7 @@ class ArticleManager extends AbstractManager
 
 
         if ($statement->execute()) {
-            var_dump($statement);
+//            var_dump($statement);
             return $this->pdo->lastInsertId();
         }
     }

@@ -40,10 +40,18 @@
                 {% for comment in comments %}
                     <div class="list-group list-group-item flex-column align-items-center cardFond rounded">
                         <div class="d-flex w-100">
+{#                            <h3>{{ comment.id }}</h3>#}
                             <p class="text-muted">commenté par : {{ comment.firstname }} {{ comment.lastname }} le : {{ comment.date }}</p>
                         </div>
                         <p class="mb-1">{{ comment.content|raw}}</p>
-                        <br/>
+                        <p style="text-align: right">
+
+                            <a href="/article/comment/signal/{{ comment.id }}" target="" data-confirm="Etes-vous certain de vouloir signaler ?">
+
+                                <button type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i>Signaler ?</button></a>
+                            {#                        Signaler ? <a href="/article/{{ article.id }}/comment/{{ comment.id }}">Commentaire: {{ comment.id }}</a>#}
+                            <br/>
+                        </p>
                     </div>
 
 
